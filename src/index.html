@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>Home</title>
+	</head>
+	<body>
+		<div class="visually-hidden">
+			<include src="dist/img/sprite.svg"></include>
+		</div>
+		<h1 class="visually-hidden">ZOO</h1>
+
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">about</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">MAP</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Zoos</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">contact us</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">design</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.header__left -->
+
+				<div class="header__right">
+					<div class="search">
+						<input class="search__input" type="checkbox" id="check" />
+						<div class="search__box">
+							<input
+								class="search__box-input"
+								type="text"
+								placeholder="Search"
+							/>
+							<label class="search__box-label" for="check">
+								<svg width="32" height="32">
+									<use xlink:href="#icon-search"></use>
+								</svg>
+							</label>
+						</div>
+					</div>
+					<!-- /.search -->
+
+					<div class="profile">
+						<button class="profile__log-in" type="button">Log in</button>
+						<button class="profile__sign-up" type="button">Sign up</button>
+					</div>
+				</div>
+				<!-- /.header__right-->
+			</div>
+			<!-- /.container -->
+		</header>
+
+		<main>
+			<div class="hero">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<p class="hero__headline">Watch your favorite animals online</p>
+						<div class="hero__description">
+							Observe different animals from around the world online in live
+							time. Help vulunteers to take a good care of animals, donate to
+							your favorite ones.
+						</div>
+						<a class="link" href="#">Watch now</a>
+					</div>
+
+					<div class="hero__video">
+						<button class="play-btn" type="button"></button>
+
+						<div class="embed">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JJqXeRFsLjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.hero -->
+
+			<section class="work-steps">
+				<div class="container">
+					<div class="steps">
+						<h2 class="steps__title work-steps__title">How it works</h2>
+						<ol class="steps__list">
+							<li class="steps__item work-steps__item">
+								<p>Keep an eye on your favourite animals online</p>
+							</li>
+							<li class="steps__item work-steps__item">
+								<p>Become a part of the communtity</p>
+							</li>
+							<li class="steps__item work-steps__item">
+								<p>Support animals with the donations</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="pets">
+				<div class="container pets__container">
+					<button class="next__right next__right--pets" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow" />
+					</button>
+					<button class="next__left next__left--pets" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow" />
+					</button>
+
+					<div class="selection-header selection-header--pets">
+						<h2 class="selection__title">Pets in zoo</h2>
+						<button class="btn btn--pets" type="button">
+							Choose your Favorite
+						</button>
+					</div>
+
+					<ul class="selection__list selection__list--pets">
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<svg
+									class="selection__item-icon selection__item-icon--pets"
+									width="32"
+									height="32"
+								>
+									<use xlink:href="#icon-iTV"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<a href="#">
+									<svg
+										class="selection__item-icon selection__item-icon--pets"
+										width="32"
+										height="32"
+									>
+										<use xlink:href="#icon-iTV"></use>
+									</svg>
+							</a>
+							</a>
+						</li>
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<a href="#">
+									<svg
+										class="selection__item-icon selection__item-icon--pets"
+										width="32"
+										height="32"
+									>
+										<use xlink:href="#icon-iTV"></use>
+									</svg>
+							</a>
+							</a>
+						</li>
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<a href="#">
+									<svg
+										class="selection__item-icon selection__item-icon--pets"
+										width="32"
+										height="32"
+									>
+										<use xlink:href="#icon-iTV"></use>
+									</svg>
+							</a>
+							</a>
+						</li>
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<a href="#">
+									<svg
+										class="selection__item-icon selection__item-icon--pets"
+										width="32"
+										height="32"
+									>
+										<use xlink:href="#icon-iTV"></use>
+									</svg>
+							</a>
+							</a>
+						</li>
+						<li class="selection__item selection__item--pets">
+							<a class="selection__item-link--pets" href="#">
+								<img
+									class="selection__item-img selection__item-img--pets"
+									width="229"
+									height="221"
+									src="./img/avatar-monkey.png"
+									alt="avatar monkey"
+								/>
+								<h3 class="selection__item-title selection__item-title--pets">
+									Pandas
+								</h3>
+								<p class="selection__item-desc selection__item-desc--pets">
+									Shenshuping Gengda Panda Center
+								</p>
+								<a href="#">
+									<svg
+										class="selection__item-icon selection__item-icon--pets"
+										width="32"
+										height="32"
+									>
+										<use xlink:href="#icon-iTV"></use>
+									</svg>
+							</a>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="feeding">
+				<div class="container">
+					<div class="steps">
+						<div class="feeding__steps-header">
+							<h2 class="steps__title feeding__steps-title">Pay and feed</h2>
+							<button class="btn btn--feeding" type="button">
+								Donate to volunteers
+							</button>
+						</div>
+						<ol class="steps__list feeding__steps-list">
+							<li class="steps__item feeding__steps-item">
+								<p>You donate to your favourite animals</p>
+							</li>
+							<li class="steps__item feeding__steps-item">
+								<p>Zoo Keepers feed animals with their favourite food</p>
+							</li>
+							<li class="steps__item feeding__steps-item">
+								<p>Animals are healthy and happy</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<div class="container">
+					<div class="selection-header selection-header--testimonials">
+						<h2 class="selection__title">testimonials</h2>
+						<button class="btn btn--test.imonials" type="button">
+							Leave feedback
+						</button>
+					</div>
+
+					<ul class="selection__list selection__list--testimonials">
+						<li class="selection__item selection__item--testimonials">
+							<div
+								class="selection__item-content selection__item-content--testimonials"
+							>
+								<time class="selection__item-date" datetime="2020-12-20"
+									>20 December 2020</time
+								>
+								<p
+									class="selection__item-desc selection__item-desc--testimonials"
+								>
+									Awesome place to observe my favourite aligators at Florida,
+									the quality of the video is great.
+								</p>
+							</div>
+							<div
+								class="selection__item-profile selection__item-profile--testimonials"
+							>
+								<img
+									class="selection__item-img selection__item-img--testimonials"
+									width="68"
+									height="68"
+									src="./img/testimonials-avatar.jpg"
+									alt="avatar people"
+								/>
+								<h3
+									class="selection__item-title selection__item-title--testimonials"
+								>
+									Adam, Spain
+								</h3>
+							</div>
+						</li>
+
+						<li class="selection__item selection__item--testimonials">
+							<div
+								class="selection__item-content selection__item-content--testimonials"
+							>
+								<time class="selection__item-date" datetime="2020-12-20"
+									>20 December 2020</time
+								>
+								<p
+									class="selection__item-desc selection__item-desc--testimonials"
+								>
+									Awesome place to observe my favourite aligators at Florida,
+									the quality of the video is great.
+								</p>
+							</div>
+							<div
+								class="selection__item-profile selection__item-profile--testimonials"
+							>
+								<img
+									class="selection__item-img selection__item-img--testimonials"
+									width="68"
+									height="68"
+									src="./img/testimonials-avatar.jpg"
+									alt="avatar people"
+								/>
+								<h3
+									class="selection__item-title selection__item-title--testimonials"
+								>
+									Adam, Spain
+								</h3>
+							</div>
+						</li>
+
+						<li class="selection__item selection__item--testimonials">
+							<div
+								class="selection__item-content selection__item-content--testimonials"
+							>
+								<time class="selection__item-date" datetime="2020-12-20"
+									>20 December 2020</time
+								>
+								<p
+									class="selection__item-desc selection__item-desc--testimonials"
+								>
+									Awesome place to observe my favourite aligators at Florida,
+									the quality of the video is great.
+								</p>
+							</div>
+							<div
+								class="selection__item-profile selection__item-profile--testimonials"
+							>
+								<img
+									class="selection__item-img selection__item-img--testimonials"
+									width="68"
+									height="68"
+									src="./img/testimonials-avatar.jpg"
+									alt="avatar people"
+								/>
+								<h3
+									class="selection__item-title selection__item-title--testimonials"
+								>
+									Adam, Spain
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="animals-list">
+				<div class="container animals-list__container">
+					<h2 class="selection__title selection__title--animals-list">
+						Look at this beautiful animals
+					</h2>
+
+					<div class="animals-list__content">
+						<ul class="selection__list selection__list--animals-list">
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+							<li class="selection__item selection__item--animals-list">
+								<a class="selection__item-link--animals-list" href="#">
+									<img
+										class="selection__item-img selection__item-img--animals-list"
+										width="76"
+										height="73"
+										src="./img/avatar-monkey.png"
+										alt="avatar monkey"
+									/>
+									<h3
+										class="selection__item-title selection__item-title--animals-list"
+									>
+										Pandas
+									</h3>
+								</a>
+							</li>
+						</ul>
+
+						<div class="next">
+							<button class="next__right" type="button">
+								<img src="./img/icon-arrow.svg" alt="arrow" />
+							</button>
+							<button class="next__left" type="button">
+								<img src="./img/icon-arrow.svg" alt="arrow" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">about</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">MAP</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Zoos</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">contact us</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">design</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.header__left -->
+
+				<div class="header__right">
+					<div class="footer__copyright">
+						<p>Design by Lemeshko Kateryna</p>
+						<p>©RSSchool and ©Yem Digital 2021</p>
+					</div>
+				</div>
+				<!-- /.header__right-->
+			</div>
+		</footer>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

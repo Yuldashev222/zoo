@@ -1,0 +1,31 @@
+.play-btn {
+	@include btnNone;
+	cursor: pointer;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 98px;
+	height: 74px;
+	display: block;
+
+	background: url("../img/icon-play.svg") no-repeat center center, rgba(46, 46, 46, 0.8);
+	background-size: 25px 30px;
+	border-radius: 25px;
+
+	transition: background .2s linear;
+
+	&:hover {
+		opacity: 0.8;
+		background: url("../img/icon-play.svg") no-repeat center center, rgba(#f00, 0.8);
+		background-size: 25px 30px;
+	}
+}
+
+.play-btn--active {
+	~ .embed {
+		display: block;
+	}
+}

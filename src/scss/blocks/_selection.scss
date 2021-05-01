@@ -1,0 +1,177 @@
+.selection-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&--pets {
+		margin-bottom: 66px;
+	}
+
+	&--testimonials {
+		margin-bottom: 52px;
+	}
+}
+.selection__title {
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: $Green;
+
+	&--animals-list {
+		margin-bottom: 60px;
+	}
+}
+
+.selection__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&--pets {
+		position: relative;
+
+		&::after {
+			content: "";
+			right: -93px;
+			bottom: 30px;
+			width: 33px;
+			height: 66px;
+			display: block;
+
+			position: absolute;
+
+			background: url("../../img/icon-Penguin.svg") no-repeat center center;
+			background-size: contain;
+		}
+	}
+
+	&--animals-list {
+		width: 100%;
+		margin-right: 70px;
+	}
+}
+.selection__item {
+	&--pets {
+		width: 480px;
+		margin-bottom: 20px;
+		background: #fff;
+		box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+		border-radius: 10px;
+
+		position: relative;
+
+		&::before {
+			content: "";
+			left: 0;
+			bottom: 90px;
+			width: 100%;
+			height: 1px;
+			display: block;
+
+			position: absolute;
+
+			background-color: #e5eaeb;
+		}
+	}
+}
+.selection__item-img {
+	&--pets {
+		display: block;
+		margin: 0 auto;
+
+		margin-bottom: 50px;
+	}
+
+	&--testimonials {
+		border-radius: 50%;
+	}
+}
+.selection__item-title {
+	&--pets {
+		margin-bottom: 6px;
+
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		color: #2d2d2d;
+	}
+
+	&--testimonials {
+		margin-left: 16px;
+
+		font-style: italic;
+		font-weight: 400;
+		color: #000;
+	}
+
+	&--animals-list {
+		font-family: 'Roboto Mono';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #2d2d2d;
+	}
+}
+.selection__item-desc {
+	&--pets {
+		font-size: 16px;
+		line-height: 19px;
+		color: #919191;
+	}
+
+	&--testimonials {
+		width: 390px;
+
+		font-style: italic;
+		font-size: 16px;
+		line-height: 19px;
+		color: #2d2d2d;
+	}
+}
+
+.selection__item-icon--pets {
+	position: absolute;
+
+	right: 20px;
+	bottom: 20px;
+}
+
+.selection__item-content {
+	&--testimonials {
+		padding: 28px 45px 80px;
+
+		background: #fff;
+		box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+		border-radius: 10px;
+	}
+}
+
+.selection__item-date {
+	font-size: 14px;
+	line-height: 16px;
+	color: #b3b3b3;
+}
+
+.selection__item-profile--testimonials {
+	margin-left: 16px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.selection__item-link--pets {
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.selection__item-link--animals-list {
+	display: block;
+	text-decoration: none;
+	color:inherit;
+}

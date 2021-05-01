@@ -1,0 +1,39 @@
+.profile {
+	display: flex;
+	align-items: center;
+
+	margin-left: 40px;
+}
+
+.profile__log-in,
+.profile__sign-up {
+	@include btnNone;
+
+	cursor: pointer;
+	text-transform: uppercase;
+	
+	color: $LightGreen;
+
+	transition: opacity 0.15s linear, border-bottom 0.1s linear;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.profile__log-in {
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
+
+	&:hover {
+		border-bottom: 2px solid $LightGreen;
+	}
+}
+
+.profile__sign-up {
+	margin-left: 24px;
+	padding: 16px 14px;
+
+	border: 1px solid $LightGreen;
+	border-radius: 100px;
+}

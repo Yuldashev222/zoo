@@ -1,0 +1,38 @@
+.hero {
+	padding: 48px 0 80px;
+	background: url("../img/hero-bg.png") no-repeat center center;
+	background-size: cover;
+}
+.hero__container {
+	display: flex;
+	justify-content: space-between;
+}
+.hero__content {
+	margin-top: 50px;
+	width: 650px;
+
+	color: #f3f7f8;
+}
+.hero__headline {
+	margin-bottom: 27px;
+	font-family: "Rubik";
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 85px;
+}
+.hero__description {
+	width: 480px;
+	margin-bottom: 87px;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+.hero__video {
+	background: url("../img/hero-wrapper.png") no-repeat center center;
+	background-size: contain;
+	width: 804px;
+	height: 666px;
+	display: block;
+
+	position: relative;
+}

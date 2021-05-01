@@ -1,0 +1,29 @@
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 110px;
+	background: #F6F9FA;
+	
+	font-family: "Roboto";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}

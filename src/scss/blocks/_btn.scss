@@ -1,0 +1,59 @@
+.btn {
+	@include btnNone;
+	
+	cursor: pointer;
+
+	border-radius: 100px;
+	font-family: "Roboto Mono";
+	text-transform: uppercase;
+
+	position: relative;
+
+	&::before {
+		content: "";
+		left: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 24px;
+		height: 24px;
+		display: block;
+
+		position: absolute;
+
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+	}
+
+	&--pets {
+		padding: 14px 20px 14px 60px;
+
+		border: 1.5px solid #19707d;
+		letter-spacing: 0.1em;
+		color: #19707d;
+
+		&::before {
+			background-image: url(../img/icon-heart.svg);
+		}
+	}
+
+	&--feeding {
+		padding: 14px 78px;
+		background: $LightGreen;
+
+		letter-spacing: -0.05em;
+		color: $Green;
+	}
+
+	&--testimonials {
+		padding: 14px 20px 14px 60px;
+
+		border: 1.5px solid #19707d;
+		letter-spacing: 0.1em;
+		color: #19707d;
+
+		&::before {
+			background-image: url(../img/icon-comment.svg);
+		}
+	}
+}

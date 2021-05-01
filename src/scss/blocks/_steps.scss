@@ -1,0 +1,35 @@
+.steps__title {
+	font-family: "Rubik";
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+.steps__list {
+	display: flex;
+	justify-content: space-around;
+}
+.steps__item {
+	padding-top: 160px;
+
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+
+	position: relative;
+
+	&::before {
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		width: 145px;
+		height: 145px;
+		display: block;
+		position: absolute;
+
+		border-radius: 50%;
+
+		background: #fff;
+	}
+}

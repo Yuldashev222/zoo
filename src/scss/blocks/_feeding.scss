@@ -1,0 +1,66 @@
+.feeding {
+	margin: 100px 0;
+	padding: 90px 0 152px;
+
+	background: url("../img/feeding-bg.png") no-repeat center center;
+	background-size: cover;
+}
+.feeding__steps-header {
+	margin-bottom: 90px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.feeding__steps-title {
+	color: $LightGreen;
+}
+
+.feeding__steps-item {
+	color: $LightGreen;
+
+	position: relative;
+
+	&::before {
+		background: url(../img/icon-feeding-1.svg) no-repeat center center, #fff;
+	}
+
+	&::after {
+		content: "";
+		right: 95%;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 266px;	
+		height: 15px;
+		display: block;
+
+		position: absolute;
+
+		background: url("../img/icon-spear.svg") no-repeat center;
+		background-size: cover;
+	}
+
+	&:first-child::after {
+		display: none;
+	}
+
+	&:nth-child(2)::after {
+		right: 80%;
+	}
+
+}
+
+.feeding__steps-span {
+	position: absolute;
+
+	right: 100%;
+	top: 40%;
+	width: 250px;
+	height: 21px;
+	display: block;
+
+	background-image: url(../img/spear.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
