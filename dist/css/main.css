@@ -504,6 +504,7 @@ template {
   padding: 0;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
   color: #C5E1E6;
@@ -529,6 +530,7 @@ template {
   padding: 0;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
   position: absolute;
   left: 50%;
@@ -670,6 +672,7 @@ template {
   padding: 0;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
   border-radius: 100px;
   font-family: "Roboto Mono";
