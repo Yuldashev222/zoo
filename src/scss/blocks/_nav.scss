@@ -5,7 +5,9 @@
 .nav__item {
 	margin-left: 52px;
 }
-.nav__link {
+.nav__btn {
+	@include btnNone;
+	
 	padding-bottom: 2px;
 	font-family: "Roboto Mono";
 	font-weight: 500;

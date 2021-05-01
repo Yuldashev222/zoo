@@ -87,19 +87,20 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a class="nav__link" href="#">about</a>
+								<button class="nav__btn" type="button">about</button>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">MAP</a>
+								<button class="nav__btn" type="button">map</button>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">Zoos</a>
+								<button class="nav__btn" type="button">zoos</button>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">contact us</a>
+								<button class="nav__btn" type="button">contact us</button>
+
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">design</a>
+								<button class="nav__btn" type="button">design</button>
 							</li>
 						</ul>
 					</nav>
@@ -485,6 +486,45 @@
 				<!-- /.header__right-->
 			</div>
 		</footer>
+
+		<div class="modal">
+			<div class="modal__content">
+				<div class="modal__content-header">
+					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+				</div>
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Contact us</h2>
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label-check" for="create">Create acccount</label>
+						<input class="modal__input-check" id="create" type="radio" name="registration">
+						<label class="modal__label-check" for="login">Log in</label>
+						<input class="modal__input-check" id="login" type="radio" name="registration">
+
+						<div class="modal__social-btn">
+							<button class="modal__google-btn" type="button">Google Sign in</button>
+							<button class="modal__facebook-btn" type="button">Facebook Sign in</button>
+						</div>
+
+						<label class="modal__label" for="name">Name</label>
+						<input class="modal__input" id="name" type="name">
+
+						<label class="modal__label" for="email">Email</label>
+						<input class="modal__input" id="email" type="email">
+
+						<label class="modal__label" for="password">Password</label>
+						<input class="modal__input" id="password" type="password">
+
+						<label class="modal__label-privacy" for="privacy">
+							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+						</label>
+						<input class="modal__input-privacy" id="privacy" type="checkbox">
+
+						<button class="modal__btn-send" type="button">send</button>
+					</form>
+				</div> <!-- /.modal__content-main -->
+			</div> <!-- /.modal__content -->
+		</div> <!-- /.modal -->
 
 		<script src="js/script.js"></script>
 	</body>
