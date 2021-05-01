@@ -1,7 +1,13 @@
 var playBtn = document.querySelector(".play-btn");
-var embed = document.querySelector(".embed");
+var wrapper = document.querySelector(".hero");
 
-playVideo.addEventListener("click", function() {
-	embed.classList.toggle('embed--active');
+function closeVideo(evt) {
+		if(evt.currentTarget.matches('.hero') && !evt.target.matches('.play-btn')){
+		playBtn.classList.remove('play-btn--active');
+	}
+}
+
+playBtn.addEventListener("click", () => {
 	playBtn.classList.toggle('play-btn--active');
+	wrapper.addEventListener("click", closeVideo);
 });

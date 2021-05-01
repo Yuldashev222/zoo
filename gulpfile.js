@@ -57,6 +57,7 @@ gulp.task("html", function () {
     .pipe(gulp.dest("dist/"))
 });
 
+
 gulp.task("refresh", function (done) {
   server.reload();
   done();
@@ -83,6 +84,11 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("dist/"))
 })
 
+gulp.task("js", function () {
+  return gulp.src("src/**/*.js")
+    .pipe(gulp.dest("dist/"))
+})
+
 gulp.task("server", function () {
   server.init({
     server: "dist/"
@@ -91,6 +97,7 @@ gulp.task("server", function () {
   gulp.watch("src/scss/**/*.{scss,sass}", gulp.series("css", "refresh"))
   gulp.watch("src/img/icon-*.svg", gulp.series("sprite", "html", "refresh"))
   gulp.watch("src/*.html", gulp.series("html", "refresh"))
+  gulp.watch("src/**/*.js", gulp.series("js", "refresh"))
 });
 
 gulp.task("clean", function () {

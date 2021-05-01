@@ -1,6 +1,6 @@
 .btn {
 	@include btnNone;
-	
+
 	cursor: pointer;
 
 	border-radius: 100px;
@@ -8,6 +8,8 @@
 	text-transform: uppercase;
 
 	position: relative;
+
+	transition: box-shadow, background 0.1s linear;
 
 	&::before {
 		content: "";
@@ -23,6 +25,11 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center center;
+	}
+
+	&:hover {
+		background: rgba($Green, 0.05);
+		box-shadow: 0px 2px 10px rgba(#606161, 1);
 	}
 
 	&--pets {
@@ -43,6 +50,11 @@
 
 		letter-spacing: -0.05em;
 		color: $Green;
+
+		&:hover {
+			background: rgba($LightGreen, .7);
+			box-shadow: 0px 2px 10px rgba($Green, 1);
+		}
 	}
 
 	&--testimonials {
