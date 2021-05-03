@@ -1,0 +1,63 @@
+.about__container {
+	display: flex;
+	justify-content: space-between;
+}
+.about__title {
+	margin-bottom: 24px;
+
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: $Green;
+}
+.about__list {
+	display: flex;
+	flex-direction: column;
+}
+.about__item {
+	margin-bottom: 36px;
+
+	a {
+		cursor: pointer;
+	}
+}
+
+.about__item-title {
+	margin-bottom: 10px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: $Green;
+}
+.about__item-desc {
+	font-size: 14px;
+	line-height: 20px;
+	color: $Green;
+}
+.about__facts {
+	.about__list {
+		padding-left: 25px;
+		max-width: 600px;
+	}
+
+	.about__item {
+		position: relative;
+		margin-bottom: 20px;
+		&::before {
+			content: "";
+			left: -22px;
+			top: 0;
+			width: 12px;
+			height: 16px;
+			display: block;
+
+			position: absolute;
+
+			background: url("../img/icon-feather.svg") no-repeat center center;
+			background-size: contain;
+		}
+	}
+}

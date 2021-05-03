@@ -1,0 +1,15 @@
+.side-cameras {
+	margin-bottom: 100px;
+
+	.container {
+		position: relative;
+	}
+}
+
+.side-cameras__list {
+	max-width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+.side-cameras__item {
+}

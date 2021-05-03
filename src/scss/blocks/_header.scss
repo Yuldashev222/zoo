@@ -1,6 +1,6 @@
 .header {
 	padding: 13px 0;
-	background: #2A8086;
+	background: #2a8086;
 	box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
 	z-index: 3;
 
@@ -26,4 +26,10 @@
 
 .header__right {
 	display: flex;
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.header {
+		padding: 20px 30px;
+	}
 }

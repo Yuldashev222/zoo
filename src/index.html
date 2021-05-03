@@ -5,13 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/main.min.css" />
-		<title>Home</title>
+		<title>About</title>
 	</head>
 	<body>
 		<div class="visually-hidden">
 			<include src="dist/img/sprite.svg"></include>
 		</div>
-		<h1 class="visually-hidden">ZOO</h1>
+		<h1 class="visually-hidden">Zoo site</h1>
 
 		<header class="header">
 			<div class="container header__container">
@@ -25,16 +25,16 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<button class="nav__btn" type="button">about</button>
+								<a class="nav__link nav__btn" id="navAbout" href="#">about</a>
 							</li>
 							<li class="nav__item">
 								<button class="nav__btn" type="button">map</button>
 							</li>
 							<li class="nav__item">
-								<button class="nav__btn" type="button">zoos</button>
+								<a class="nav__link nav__btn" href="zoos.html">zoos</a>
 							</li>
 							<li class="nav__item">
-								<button class="nav__btn" type="button">contact us</button>
+								<button class="nav__btn nav__btn-contact" type="button">contact us</button>
 
 							</li>
 							<li class="nav__item">
@@ -43,7 +43,6 @@
 						</ul>
 					</nav>
 				</div>
-				<!-- /.header__left -->
 
 				<div class="header__right">
 					<div class="search">
@@ -61,16 +60,13 @@
 							</label>
 						</div>
 					</div>
-					<!-- /.search -->
 
 					<div class="profile">
 						<button class="profile__log-in" type="button">Log in</button>
 						<button class="profile__sign-up" type="button">Sign up</button>
 					</div>
 				</div>
-				<!-- /.header__right-->
 			</div>
-			<!-- /.container -->
 		</header>
 
 		<main>
@@ -581,7 +577,6 @@
 						</ul>
 					</nav>
 				</div>
-				<!-- /.header__left -->
 
 				<div class="header__right">
 					<div class="footer__copyright">
@@ -589,7 +584,6 @@
 						<p>©RSSchool and ©Yem Digital 2021</p>
 					</div>
 				</div>
-				<!-- /.header__right-->
 			</div>
 		</footer>
 
@@ -602,35 +596,207 @@
 				<div class="modal__content-main">
 					<h2 class="modal__content-title">Contact us</h2>
 					<form class="modal__form" action="/" method="POST">
+						<!-- <input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
 						<label class="modal__label-check" for="create">Create acccount</label>
-						<input class="modal__input-check" id="create" type="radio" name="registration">
-						<label class="modal__label-check" for="login">Log in</label>
-						<input class="modal__input-check" id="login" type="radio" name="registration">
+						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
+						<label class="modal__label-check" for="login">Log in</label> -->
 
-						<div class="modal__social-btn">
-							<button class="modal__google-btn" type="button">Google Sign in</button>
-							<button class="modal__facebook-btn" type="button">Facebook Sign in</button>
+						<!-- <div class="modal__social-btns">
+							<button class="modal__social-btn" type="button">Google Sign in</button>
+							<button class="modal__social-btn" type="button">Facebook Sign in</button>
+						</div> -->
+
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Your Message
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+
+						<!-- <label class="modal__label-privacy">
+							<input class="modal__input-privacy" type="checkbox" required>
+							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+						</label> -->
+
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--sign-up">
+			<div class="modal__content">
+				<div class="modal__content-header">
+					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+				</div>
+
+				<div class="modal__content-main">
+					<form class="modal__form" action="/" method="POST">
+						<input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
+						<label class="modal__label-check" for="create">Create acccount</label>
+						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
+						<label class="modal__label-check" for="login">Log in</label>
+
+						<div class="modal__social-btns">
+							<button class="modal__social-btn" type="button">Google Sign in</button>
+							<button class="modal__social-btn" type="button">Facebook Sign in</button>
 						</div>
 
-						<label class="modal__label" for="name">Name</label>
-						<input class="modal__input" id="name" type="name">
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
 
-						<label class="modal__label" for="email">Email</label>
-						<input class="modal__input" id="email" type="email">
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+						
+						<label class="modal__label">
+							password
+							<input class="modal__input" type="password" required>
+						</label>
 
-						<label class="modal__label" for="password">Password</label>
-						<input class="modal__input" id="password" type="password">
-
-						<label class="modal__label-privacy" for="privacy">
+						<label class="modal__label-privacy">
+							<input class="modal__input-privacy" type="checkbox" required>
 							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
 						</label>
-						<input class="modal__input-privacy" id="privacy" type="checkbox">
 
-						<button class="modal__btn-send" type="button">send</button>
+						<button class="modal__btn-send" type="submit">send</button>
 					</form>
-				</div> <!-- /.modal__content-main -->
-			</div> <!-- /.modal__content -->
-		</div> <!-- /.modal -->
+				</div>
+			</div> 
+		</div> <!-- /.modal--sign-up -->
+
+		<div class="modal modal--contact">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Contact us</h2>
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Your Message
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--feedback">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Leave feedback</h2>
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Feedback
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--feeding">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Donate to volunteers</h2>
+					<p class="modal__content-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
+
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Choose an animal
+							<input class="modal__input" type="text" required>
+						</label>
+
+						<label class="modal__label modal__label-payments">Payments</label>
+						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked type="radio" name="registration">
+						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
+						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
+						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
+
+						<div class="modal__price">
+							<input class="visually-hidden modal__input-price" id="$3" checked type="radio" name="price">
+							<label class="modal__label-price" for="$3">$3</label>
+							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
+							<label class="modal__label-price" for="$5">$5</label>
+							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
+							<label class="modal__label-price" for="$10">$10</label>
+							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
+							<label class="modal__label-price" for="$25">$25</label>
+						</div>
+
+						<label class="modal__label">
+							Your name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Your Email
+							<input class="modal__input" type="email" required></input>
+						</label>
+
+						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
+						<div class="modal__content-payment">
+							<label class="modal__label modal__label--feeding">
+								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
+								<input class="modal__input modal__input--feeding" type="number" name="card_number" required placeholder="Card Number"></input>
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="number" required placeholder="MM / YY"></input>
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="text" required placeholder="CVC"></input>
+							</label>
+						</div>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+
+					<div class="modal__copyright">
+						<p>Your payment is protected</p>
+					</div>
+				</div>
+				
+			</div> 
+		</div> 
+
 
 		<script src="js/script.js"></script>
 	</body>

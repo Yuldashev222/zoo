@@ -21,6 +21,13 @@
 		top: 50%;
 		transform: translateY(150%) rotate(180deg);
 	}
+
+	&--side-cameras {
+		position: absolute;
+
+		right: 50px;
+		top: 45%;
+	}
 }
 
 .next__right {
@@ -29,5 +36,12 @@
 
 		right: -85px;
 		top: 50%;
+	}
+
+	&--side-cameras {
+		position: absolute;
+
+		right: 50px;
+		top: 35%;
 	}
 }

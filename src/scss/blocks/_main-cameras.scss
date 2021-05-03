@@ -1,0 +1,62 @@
+.main-cameras {
+	margin-bottom: 56px;
+}
+.main-cameras__header {
+	margin-bottom: 24px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.zoos-title {
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: $Green;
+}
+.main-cameras__info {
+	display: flex;
+}
+.main-cameras__info-item {
+	cursor: pointer;
+	text-align: center;
+	line-height: 42px;
+	width: 42px;
+	height: 42px;
+	display: block;
+
+	border: 1.5px solid #19707d;
+	box-sizing: border-box;
+	border-radius: 100px;
+
+	text-transform: lowercase;
+	color: #19707d;
+
+	&:last-child {
+		margin-left: 34px;
+	}
+}
+.cameras-title {
+	margin-bottom: 10px;
+
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: capitalize;
+	color: $Green;
+}
+
+.embed--main-cameras {
+	left: 0;
+	top: 0;
+	transform: none;
+	display: block;
+	width: 100%;
+	height: 604px;
+
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 19.5469px;
+}

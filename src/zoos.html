@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>Zoos</title>
+	</head>
+	<body>
+		<div class="visually-hidden">
+			<include src="dist/img/sprite.svg"></include>
+		</div>
+
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link nav__btn" href="index.html">about</a>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">map</button>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link nav__btn" id="navZoos" href="#">zoos</a>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn nav__btn-contact" type="button">
+									contact us
+								</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">design</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__right">
+					<div class="search">
+						<input class="search__input" type="checkbox" id="check" />
+						<div class="search__box">
+							<input
+								class="search__box-input"
+								type="text"
+								placeholder="Search"
+							/>
+							<label class="search__box-label" for="check">
+								<svg width="32" height="32">
+									<use xlink:href="#icon-search"></use>
+								</svg>
+							</label>
+						</div>
+					</div>
+
+					<div class="profile">
+						<button class="profile__log-in" type="button">Log in</button>
+						<button class="profile__sign-up" type="button">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<aside class="sidebar">
+			<div class="sidebar__content">
+				<ul class="sidebar__animals">
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="zoos.html">
+								<input
+								class="visually-hidden sidebar__input"
+									type="radio"
+									checked
+									name="animals"
+								/>
+								<div class="sidebar__animal-wrapper">
+									<img
+									class="sidebar__avatar"
+									src="./img/eagle-sidebar.png"
+									width="70"
+									height="65"
+									alt="eagle"
+									/>
+								</div>
+								Pandas
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="eagles.html">
+								<input
+									class="visually-hidden sidebar__input"
+									type="radio"
+									name="animals"
+								/>
+								<div class="sidebar__animal-wrapper">
+									<img
+									class="sidebar__avatar"
+									src="./img/eagle-sidebar.png"
+									width="70"
+									height="65"
+									alt="eagle"
+									/>
+								</div>
+								Eagles
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="gorillas.html">
+								<input
+								class="visually-hidden sidebar__input"
+									type="radio"
+									name="animals"
+								/>
+								<div class="sidebar__animal-wrapper">
+									<img
+									class="sidebar__avatar"
+									src="./img/eagle-sidebar.png"
+									width="70"
+									height="65"
+									alt="eagle"
+									/>
+								</div>
+								Gorillas
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="alligators.html">
+								<input
+								class="visually-hidden sidebar__input"
+									type="radio"
+									name="animals"
+								/>
+								<div class="sidebar__animal-wrapper">
+									<img
+									class="sidebar__avatar"
+									src="./img/eagle-sidebar.png"
+									width="70"
+									height="65"
+									alt="eagle"
+									/>
+								</div>
+								Aligators
+							</a>
+						</label>
+					</li>
+					
+				</ul>
+			</div>
+		</aside>
+
+		<main class="main">
+			<section class="main-cameras">
+				<div class="container container--zoos">
+					<div class="main-cameras__header">
+						<h1 class="zoos-title">The Giant Pandas</h1>
+	
+						<div class="main-cameras__info">
+							<div class="main-cameras__info-item">i</div>
+							<div class="main-cameras__info-item">
+								<img src="./img/icon-heart.svg" width="18" height="16" alt="heart">
+							</div>
+						</div>
+					</div>
+	
+					<h2 class="cameras-title main-cameras__title">Main cameras</h2>
+	
+					<div class="embed embed--main-cameras">
+						<iframe	width="560"	height="315" src="https://www.youtube.com/embed/D0eqnda8dOk" title="YouTube video player"	frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>					
+				</div>
+			</section>
+
+			<section class="side-cameras">
+				<div class="container container--zoos">
+					<h2 class="cameras-title side-cameras__title">Side cameras</h2>
+
+					<button class="next__right next__right--side-cameras" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow" />
+					</button>
+					<button class="next__left next__left--side-cameras" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow" />
+					</button>
+
+					<ul class="side-cameras__list">
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="container container--zoos about__container">
+					<div class="about__information">
+						<h2 class="about__title">Information</h2>
+						<ul class="about__list">
+							<li class="about__item">
+								<h3 class="about__item-title">Zoo</h3>
+								<a class="about__item-desc" href="#">Shenshuping Gengda Panda Center</a>
+							</li>
+							<li class="about__item">
+								<h3 class="about__item-title">Type of aviary</h3>
+								<p class="about__item-desc">Shenshuping Gengda Panda Center</p>
+							</li>
+							<li class="about__item">
+								<h3 class="about__item-title">Habitat</h3>
+								<a class="about__item-desc" href="#">Mountains of southwest China</a>
+							</li>
+							<li class="about__item">
+								<h3 class="about__item-title">Type of food</h3>
+								<p class="about__item-desc">Bamboo</p>
+							</li>
+							<li class="about__item">
+								<h3 class="about__item-title">Population in the world</h3>
+								<p class="about__item-desc">600</p>
+							</li>
+							<li class="about__item">
+								<h3 class="about__item-title">About species</h3>
+								<p class="about__item-desc">Shenshuping Gengda Panda Center</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="about__facts">
+						<h2 class="about__title">Interesting Facts</h2>
+						<ul class="about__list">
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<button class="nav__btn" type="button">about</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">MAP</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">Zoos</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">contact us</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">design</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__right">
+					<div class="footer__copyright">
+						<p>Design by Lemeshko Kateryna</p>
+						<p>©RSSchool and ©Yem Digital 2021</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal">
+			<div class="modal__content">
+				<div class="modal__content-header">
+					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+				</div>
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Contact us</h2>
+					<form class="modal__form" action="/" method="POST">
+						<!-- <input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
+						<label class="modal__label-check" for="create">Create acccount</label>
+						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
+						<label class="modal__label-check" for="login">Log in</label> -->
+
+						<!-- <div class="modal__social-btns">
+							<button class="modal__social-btn" type="button">Google Sign in</button>
+							<button class="modal__social-btn" type="button">Facebook Sign in</button>
+						</div> -->
+
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Your Message
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+
+						<!-- <label class="modal__label-privacy">
+							<input class="modal__input-privacy" type="checkbox" required>
+							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+						</label> -->
+
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--sign-up">
+			<div class="modal__content">
+				<div class="modal__content-header">
+					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+				</div>
+
+				<div class="modal__content-main">
+					<form class="modal__form" action="/" method="POST">
+						<input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
+						<label class="modal__label-check" for="create">Create acccount</label>
+						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
+						<label class="modal__label-check" for="login">Log in</label>
+
+						<div class="modal__social-btns">
+							<button class="modal__social-btn" type="button">Google Sign in</button>
+							<button class="modal__social-btn" type="button">Facebook Sign in</button>
+						</div>
+
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+						
+						<label class="modal__label">
+							password
+							<input class="modal__input" type="password" required>
+						</label>
+
+						<label class="modal__label-privacy">
+							<input class="modal__input-privacy" type="checkbox" required>
+							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+						</label>
+
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> <!-- /.modal--sign-up -->
+
+		<div class="modal modal--contact">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Contact us</h2>
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Your Message
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--feedback">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Leave feedback</h2>
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required>
+						</label>
+
+						<label class="modal__label">
+							Feedback
+							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+						</label>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div> 
+		</div> 
+
+		<div class="modal modal--feeding">
+			<div class="modal__content">
+
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Donate to volunteers</h2>
+					<p class="modal__content-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
+
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Choose an animal
+							<input class="modal__input" type="text" required>
+						</label>
+
+						<label class="modal__label modal__label-payments">Payments</label>
+						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked type="radio" name="registration">
+						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
+						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
+						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
+
+						<div class="modal__price">
+							<input class="visually-hidden modal__input-price" id="$3" checked type="radio" name="price">
+							<label class="modal__label-price" for="$3">$3</label>
+							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
+							<label class="modal__label-price" for="$5">$5</label>
+							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
+							<label class="modal__label-price" for="$10">$10</label>
+							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
+							<label class="modal__label-price" for="$25">$25</label>
+						</div>
+
+						<label class="modal__label">
+							Your name
+							<input class="modal__input" type="name" required>
+						</label>
+
+						<label class="modal__label">
+							Your Email
+							<input class="modal__input" type="email" required></input>
+						</label>
+
+						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
+						<div class="modal__content-payment">
+							<label class="modal__label modal__label--feeding">
+								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
+								<input class="modal__input modal__input--feeding" type="number" name="card_number" required placeholder="Card Number"></input>
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="number" required placeholder="MM / YY"></input>
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="text" required placeholder="CVC"></input>
+							</label>
+						</div>
+						
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+
+					<div class="modal__copyright">
+						<p>Your payment is protected</p>
+					</div>
+				</div>
+				
+			</div> 
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

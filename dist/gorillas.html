@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/main.min.css">
-		<title>About</title>
-	</head>
-	<body>
-		<div class="visually-hidden">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Gorillas</title>
+</head>
+<body>
+	<div class="visually-hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <clipPath id="clip0">
 <rect width="64" height="64" fill="white"></rect>
@@ -140,7 +140,6 @@
 <path d="M1 26H267.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 </symbol></svg>
 		</div>
-		<h1 class="visually-hidden">Zoo site</h1>
 
 		<header class="header">
 			<div class="container header__container">
@@ -154,17 +153,18 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a class="nav__link nav__btn" id="navAbout" href="#">about</a>
+								<a class="nav__link nav__btn" href="index.html">about</a>
 							</li>
 							<li class="nav__item">
 								<button class="nav__btn" type="button">map</button>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link nav__btn" href="zoos.html">zoos</a>
+								<a class="nav__link nav__btn" id="navZoos" href="#">zoos</a>
 							</li>
 							<li class="nav__item">
-								<button class="nav__btn nav__btn-contact" type="button">contact us</button>
-
+								<button class="nav__btn nav__btn-contact" type="button">
+									contact us
+								</button>
 							</li>
 							<li class="nav__item">
 								<button class="nav__btn" type="button">design</button>
@@ -194,316 +194,162 @@
 			</div>
 		</header>
 
-		<main>
-			<div class="hero">
-				<div class="container hero__container">
-					<div class="hero__content">
-						<p class="hero__headline">Watch your favorite animals online</p>
-						<div class="hero__description">
-							Observe different animals from around the world online in live
-							time. Help vulunteers to take a good care of animals, donate to
-							your favorite ones.
-						</div>
-						<a class="link" href="#">Watch now</a>
-					</div>
-
-					<div class="hero__video">
-						<button class="play-btn" type="button"></button>
-
-						<div class="embed">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/D0eqnda8dOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-						</div>
-					</div>
-				</div>
-				<!-- /.container -->
+		<aside class="sidebar">
+			<div class="sidebar__content">
+				<ul class="sidebar__animals">
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="zoos.html">
+								<input class="visually-hidden sidebar__input" type="radio" name="animals">
+								<div class="sidebar__animal-wrapper">
+									<img class="sidebar__avatar" src="./img/eagle-sidebar.png" width="70" height="65" alt="eagle">
+								</div>
+								Pandas
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="eagles.html">
+								<input class="visually-hidden sidebar__input" type="radio" name="animals">
+								<div class="sidebar__animal-wrapper">
+									<img class="sidebar__avatar" src="./img/eagle-sidebar.png" width="70" height="65" alt="eagle">
+								</div>
+								Eagles
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="gorillas.html">
+								<input class="visually-hidden sidebar__input" type="radio" checked="" name="animals">
+								<div class="sidebar__animal-wrapper">
+									<img class="sidebar__avatar" src="./img/eagle-sidebar.png" width="70" height="65" alt="eagle">
+								</div>
+								Gorillas
+							</a>
+						</label>
+					</li>
+					<li class="sidebar__animal">
+						<label class="sidebar__label">
+							<a href="alligators.html">
+								<input class="visually-hidden sidebar__input" type="radio" name="animals">
+								<div class="sidebar__animal-wrapper">
+									<img class="sidebar__avatar" src="./img/eagle-sidebar.png" width="70" height="65" alt="eagle">
+								</div>
+								Aligators
+							</a>
+						</label>
+					</li>
+					
+				</ul>
 			</div>
-			<!-- /.hero -->
+		</aside>
 
-			<section class="work-steps">
-				<div class="container">
-					<div class="steps">
-						<h2 class="steps__title work-steps__title">How it works</h2>
-						<ol class="steps__list">
-							<li class="steps__item work-steps__item">
-								<p>Keep an eye on your favourite animals online</p>
-							</li>
-							<li class="steps__item work-steps__item">
-								<p>Become a part of the communtity</p>
-							</li>
-							<li class="steps__item work-steps__item">
-								<p>Support animals with the donations</p>
-							</li>
-						</ol>
-					</div>
-				</div>
-			</section>
-
-			<section class="pets">
-				<div class="container pets__container">
-					<button class="next__right next__right--pets" type="button">
-						<img src="./img/icon-arrow.svg" alt="arrow">
-					</button>
-					<button class="next__left next__left--pets" type="button">
-						<img src="./img/icon-arrow.svg" alt="arrow">
-					</button>
-
-					<div class="selection-header selection-header--pets">
-						<h2 class="selection__title">Pets in zoo</h2>
-						<button class="btn btn--pets" type="button">
-							Choose your Favorite
-						</button>
-					</div>
-
-					<ul class="selection__list selection__list--pets">
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-									<use xlink:href="#icon-iTV"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<a href="#">
-									<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-										<use xlink:href="#icon-iTV"></use>
-									</svg>
-								</a>
-							</a>
-						</li>
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<a href="#">
-									<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-										<use xlink:href="#icon-iTV"></use>
-									</svg>
-								</a>
-							</a>
-						</li>
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<a href="#">
-									<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-										<use xlink:href="#icon-iTV"></use>
-									</svg>
-								</a>
-							</a>
-						</li>
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<a href="#">
-									<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-										<use xlink:href="#icon-iTV"></use>
-									</svg>
-								</a>
-							</a>
-						</li>
-						<li class="selection__item selection__item--pets">
-							<a class="selection__item-link--pets" href="#">
-								<img class="selection__item-img selection__item-img--pets" width="229" height="221" src="./img/avatar-monkey.png" alt="avatar monkey">
-								<h3 class="selection__item-title selection__item-title--pets">
-									Pandas
-								</h3>
-								<p class="selection__item-desc selection__item-desc--pets">
-									Shenshuping Gengda Panda Center
-								</p>
-								<a href="#">
-									<svg class="selection__item-icon selection__item-icon--pets" width="32" height="32">
-										<use xlink:href="#icon-iTV"></use>
-									</svg>
-								</a>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="feeding">
-				<div class="container">
-					<div class="steps">
-						<div class="feeding__steps-header">
-							<h2 class="steps__title feeding__steps-title">Pay and feed</h2>
-							<button class="btn btn--feeding" type="button">
-								Donate to volunteers
-							</button>
+		<main class="main">
+			<section class="main-cameras">
+				<div class="container container--zoos">
+					<div class="main-cameras__header">
+						<h1 class="zoos-title">The Giant Pandas</h1>
+	
+						<div class="main-cameras__info">
+							<div class="main-cameras__info-item">i</div>
+							<div class="main-cameras__info-item">
+								<img src="./img/icon-heart.svg" width="18" height="16" alt="heart">
+							</div>
 						</div>
-						<ol class="steps__list feeding__steps-list">
-							<li class="steps__item feeding__steps-item">
-								<p>You donate to your favourite animals</p>
-							</li>
-							<li class="steps__item feeding__steps-item">
-								<p>Zoo Keepers feed animals with their favourite food</p>
-							</li>
-							<li class="steps__item feeding__steps-item">
-								<p>Animals are healthy and happy</p>
-							</li>
-						</ol>
 					</div>
+	
+					<h2 class="cameras-title main-cameras__title">Main cameras</h2>
+	
+					<div class="embed embed--main-cameras">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/D0eqnda8dOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+						</iframe>
+					</div>					
 				</div>
 			</section>
 
-			<section class="testimonials">
-				<div class="container">
-					<div class="selection-header selection-header--testimonials">
-						<h2 class="selection__title">testimonials</h2>
-						<button class="btn btn--testimonials" type="button">
-							Leave feedback
-						</button>
-					</div>
+			<section class="side-cameras">
+				<div class="container container--zoos">
+					<h2 class="cameras-title side-cameras__title">Side cameras</h2>
 
-					<ul class="selection__list selection__list--testimonials">
-						<li class="selection__item selection__item--testimonials">
-							<div class="selection__item-content selection__item-content--testimonials">
-								<time class="selection__item-date" datetime="2020-12-20">20 December 2020</time>
-								<p class="selection__item-desc selection__item-desc--testimonials">
-									Awesome place to observe my favourite aligators at Florida,
-									the quality of the video is great.
-								</p>
-							</div>
-							<div class="selection__item-profile selection__item-profile--testimonials">
-								<img class="selection__item-img selection__item-img--testimonials" width="68" height="68" src="./img/testimonials-avatar.jpg" alt="avatar people">
-								<h3 class="selection__item-title selection__item-title--testimonials">
-									Adam, Spain
-								</h3>
-							</div>
+					<button class="next__right next__right--side-cameras" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow">
+					</button>
+					<button class="next__left next__left--side-cameras" type="button">
+						<img src="./img/icon-arrow.svg" alt="arrow">
+					</button>
+
+					<ul class="side-cameras__list">
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 						</li>
 
-						<li class="selection__item selection__item--testimonials">
-							<div class="selection__item-content selection__item-content--testimonials">
-								<time class="selection__item-date" datetime="2020-12-20">20 December 2020</time>
-								<p class="selection__item-desc selection__item-desc--testimonials">
-									Awesome place to observe my favourite aligators at Florida,
-									the quality of the video is great.
-								</p>
-							</div>
-							<div class="selection__item-profile selection__item-profile--testimonials">
-								<img class="selection__item-img selection__item-img--testimonials" width="68" height="68" src="./img/testimonials-avatar.jpg" alt="avatar people">
-								<h3 class="selection__item-title selection__item-title--testimonials">
-									Adam, Spain
-								</h3>
-							</div>
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 						</li>
 
-						<li class="selection__item selection__item--testimonials">
-							<div class="selection__item-content selection__item-content--testimonials">
-								<time class="selection__item-date" datetime="2020-12-20">20 December 2020</time>
-								<p class="selection__item-desc selection__item-desc--testimonials">
-									Awesome place to observe my favourite aligators at Florida,
-									the quality of the video is great.
-								</p>
-							</div>
-							<div class="selection__item-profile selection__item-profile--testimonials">
-								<img class="selection__item-img selection__item-img--testimonials" width="68" height="68" src="./img/testimonials-avatar.jpg" alt="avatar people">
-								<h3 class="selection__item-title selection__item-title--testimonials">
-									Adam, Spain
-								</h3>
-							</div>
+						<li class="side-cameras__item">
+							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="animals-list">
-				<div class="container animals-list__container">
-					<h2 class="selection__title selection__title--animals-list">
-						Look at this beautiful animals
-					</h2>
-
-					<div class="animals-list__content">
-						<ul class="selection__list selection__list--animals-list">
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+			<section class="about">
+				<div class="container container--zoos about__container">
+					<div class="about__information">
+						<h2 class="about__title">Information</h2>
+						<ul class="about__list">
+							<li class="about__item">
+								<h3 class="about__item-title">Zoo</h3>
+								<a class="about__item-desc" href="#">Shenshuping Gengda Panda Center</a>
 							</li>
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+							<li class="about__item">
+								<h3 class="about__item-title">Type of aviary</h3>
+								<p class="about__item-desc">Shenshuping Gengda Panda Center</p>
 							</li>
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+							<li class="about__item">
+								<h3 class="about__item-title">Habitat</h3>
+								<a class="about__item-desc" href="#">Mountains of southwest China</a>
 							</li>
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+							<li class="about__item">
+								<h3 class="about__item-title">Type of food</h3>
+								<p class="about__item-desc">Bamboo</p>
 							</li>
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+							<li class="about__item">
+								<h3 class="about__item-title">Population in the world</h3>
+								<p class="about__item-desc">600</p>
 							</li>
-							<li class="selection__item selection__item--animals-list">
-								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
-									<h3 class="selection__item-title selection__item-title--animals-list">
-										Pandas
-									</h3>
-								</a>
+							<li class="about__item">
+								<h3 class="about__item-title">About species</h3>
+								<p class="about__item-desc">Shenshuping Gengda Panda Center</p>
 							</li>
 						</ul>
+					</div>
 
-						<div class="next">
-							<button class="next__right" type="button">
-								<img src="./img/icon-arrow.svg" alt="arrow">
-							</button>
-							<button class="next__left" type="button">
-								<img src="./img/icon-arrow.svg" alt="arrow">
-							</button>
-						</div>
+					<div class="about__facts">
+						<h2 class="about__title">Interesting Facts</h2>
+						<ul class="about__list">
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+							<li class="about__item">
+								<p class="about__item-desc">The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -547,218 +393,5 @@
 				</div>
 			</div>
 		</footer>
-
-		<div class="modal">
-			<div class="modal__content">
-				<div class="modal__content-header">
-					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
-				</div>
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Contact us</h2>
-					<form class="modal__form" action="/" method="POST">
-						<!-- <input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
-						<label class="modal__label-check" for="create">Create acccount</label>
-						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
-						<label class="modal__label-check" for="login">Log in</label> -->
-
-						<!-- <div class="modal__social-btns">
-							<button class="modal__social-btn" type="button">Google Sign in</button>
-							<button class="modal__social-btn" type="button">Facebook Sign in</button>
-						</div> -->
-
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required="">
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required="">
-						</label>
-
-						<label class="modal__label">
-							Your Message
-							<textarea class="modal__input modal__input-textarea" type="text" required=""></textarea>
-						</label>
-
-						<!-- <label class="modal__label-privacy">
-							<input class="modal__input-privacy" type="checkbox" required>
-							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
-						</label> -->
-
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> 
-
-		<div class="modal modal--sign-up">
-			<div class="modal__content">
-				<div class="modal__content-header">
-					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
-				</div>
-
-				<div class="modal__content-main">
-					<form class="modal__form" action="/" method="POST">
-						<input class="visually-hidden modal__input-check-create" id="create" checked="" type="radio" name="registration">
-						<label class="modal__label-check" for="create">Create acccount</label>
-						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
-						<label class="modal__label-check" for="login">Log in</label>
-
-						<div class="modal__social-btns">
-							<button class="modal__social-btn" type="button">Google Sign in</button>
-							<button class="modal__social-btn" type="button">Facebook Sign in</button>
-						</div>
-
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required="">
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required="">
-						</label>
-						
-						<label class="modal__label">
-							password
-							<input class="modal__input" type="password" required="">
-						</label>
-
-						<label class="modal__label-privacy">
-							<input class="modal__input-privacy" type="checkbox" required="">
-							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
-						</label>
-
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> <!-- /.modal--sign-up -->
-
-		<div class="modal modal--contact">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Contact us</h2>
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required="">
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required="">
-						</label>
-
-						<label class="modal__label">
-							Your Message
-							<textarea class="modal__input modal__input-textarea" type="text" required=""></textarea>
-						</label>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> 
-
-		<div class="modal modal--feedback">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Leave feedback</h2>
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required="">
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required="">
-						</label>
-
-						<label class="modal__label">
-							Feedback
-							<textarea class="modal__input modal__input-textarea" type="text" required=""></textarea>
-						</label>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> 
-
-		<div class="modal modal--feeding">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Donate to volunteers</h2>
-					<p class="modal__content-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
-
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Choose an animal
-							<input class="modal__input" type="text" required="">
-						</label>
-
-						<label class="modal__label modal__label-payments">Payments</label>
-						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked="" type="radio" name="registration">
-						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
-						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
-						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
-
-						<div class="modal__price">
-							<input class="visually-hidden modal__input-price" id="$3" checked="" type="radio" name="price">
-							<label class="modal__label-price" for="$3">$3</label>
-							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
-							<label class="modal__label-price" for="$5">$5</label>
-							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
-							<label class="modal__label-price" for="$10">$10</label>
-							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
-							<label class="modal__label-price" for="$25">$25</label>
-						</div>
-
-						<label class="modal__label">
-							Your name
-							<input class="modal__input" type="name" required="">
-						</label>
-
-						<label class="modal__label">
-							Your Email
-							<input class="modal__input" type="email" required="">
-						</label>
-
-						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
-						<div class="modal__content-payment">
-							<label class="modal__label modal__label--feeding">
-								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
-								<input class="modal__input modal__input--feeding" type="number" name="card_number" required="" placeholder="Card Number">
-							</label>
-
-							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="number" required="" placeholder="MM / YY">
-							</label>
-
-							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="text" required="" placeholder="CVC">
-							</label>
-						</div>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-
-					<div class="modal__copyright">
-						<p>Your payment is protected</p>
-					</div>
-				</div>
-				
-			</div> 
-		</div> 
-
-
-		<script src="js/script.js"></script>
-	</body>
+</body>
 </html>
