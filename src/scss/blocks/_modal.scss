@@ -13,7 +13,8 @@
 .modal--contact--active,
 .modal--sign-up--active,
 .modal--feedback--active,
-.modal--feeding--active {
+.modal--feeding--active,
+.modal--log-in--active {
 	display: flex;
 }
 
@@ -73,6 +74,7 @@
 
 	border-bottom: 2px solid transparent;
 }
+
 .modal__input-check-login:checked + .modal__label-check,
 .modal__input-check-create:checked + .modal__label-check {
 	border-bottom: 2px solid #2a8086;

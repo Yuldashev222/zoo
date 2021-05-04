@@ -25,11 +25,7 @@
 	}
 }
 
-#navAbout {
-	border-bottom: 2px solid $LightGreen;
-}
-
-#navZoos {
+#borderBottom {
 	border-bottom: 2px solid $LightGreen;
 }
 
@@ -48,5 +44,17 @@
 	}
 	.nav__item {
 		margin-left: 42px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.nav {
+		display: none;
 	}
 }

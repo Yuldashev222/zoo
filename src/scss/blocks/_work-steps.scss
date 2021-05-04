@@ -1,11 +1,12 @@
 .work-steps {
+	overflow: hidden;
 	margin-top: -65px;
 	margin-bottom: 70px;
 	padding-bottom: 650px;
 
 	background: url("../img/work-steps-bg.png") no-repeat;
 	background-position: center bottom;
-	background-size: contain;
+	background-size: 1912px contain;
 }
 
 .work-steps__title {
@@ -20,5 +21,62 @@
 		background: url(../img/icon-binoculars.svg) no-repeat center center, #fff;
 		box-shadow: 0px 2px 50px rgba(#000, 0.06);
 	}
-	
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.work-steps {
+		overflow: hidden;
+		margin-top: -10px;
+		margin-bottom: 50px;
+		padding-bottom: 550px;
+
+		background: url("../img/work-steps-bg.png") no-repeat;
+		background-position: left bottom;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.work-steps {
+		margin-top: -40px;
+		margin-bottom: 30px;
+		padding-bottom: 350px;
+
+		background: url("../img/work-steps-bg.png") no-repeat;
+		background-position: left -30px bottom;
+		background-size: 1120px 291px;
+	}
+
+	.work-steps__title {
+		margin-bottom: 30px;
+	}
+
+	.work-steps__item {
+		// margin-left: 20px;
+		&::before {
+			background-size: 40px 40px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.work-steps {
+		margin-top: 32px;
+		margin-bottom: 10px;
+		padding-bottom: 500px;
+
+		background: url("../img/work-steps-bg.png") no-repeat;
+		background-position: bottom center;
+		background-size: 320px contain;
+	}
+
+	.work-steps__title {
+		margin-bottom: 20px;
+	}
+
+	.work-steps__item {
+
+		&::before {
+			background-size: 40px 32px;
+		}
+	}
 }

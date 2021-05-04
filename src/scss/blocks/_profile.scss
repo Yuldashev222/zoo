@@ -1,5 +1,4 @@
 .profile {
-	
 	display: flex;
 	align-items: center;
 
@@ -12,7 +11,7 @@
 
 	cursor: pointer;
 	text-transform: uppercase;
-	
+
 	color: $LightGreen;
 
 	transition: opacity 0.15s linear, border-bottom 0.1s linear;
@@ -29,6 +28,10 @@
 	&:hover {
 		border-bottom: 2px solid $LightGreen;
 	}
+
+	&--active {
+		border-bottom: 2px solid $LightGreen;
+	}
 }
 
 .profile__sign-up {
@@ -37,4 +40,16 @@
 
 	border: 1px solid $LightGreen;
 	border-radius: 100px;
+}
+
+@media screen and (max-width: $tablet) {
+	.profile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.profile {
+		display: none;
+	}
 }

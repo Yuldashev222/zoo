@@ -31,8 +31,8 @@
 	}
 
 	&:focus {
-		box-shadow: -10px -10px 15px #114d52, 
-		10px 10px 15px #114d52;
+		box-shadow: -1px -1px 5px #1a676e, 
+		1px 1px 5px #114d52;
 		transition: .5s;
 	}
 }
@@ -63,5 +63,17 @@
 		&:hover {
 			transform: scale(1);
 		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.search {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.search {
+		display: none;
 	}
 }

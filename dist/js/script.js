@@ -16,6 +16,9 @@ var modalFeeding = document.querySelector(".modal--feeding");
 var signUp = document.querySelector(".profile__sign-up");
 var modalSignUp = document.querySelector(".modal--sign-up");
 
+var login = document.querySelector(".profile__log-in");
+var modallogin = document.querySelector(".modal--log-in");
+
 function closeVideo(evt) {
 		if(evt.currentTarget.matches('.hero') && !evt.target.matches('.play-btn')){
 		playBtn.classList.remove('play-btn--active');
@@ -44,6 +47,12 @@ signUp.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
+login.addEventListener("click", function () {
+	login.classList.toggle('profile__log-in--active');
+	modallogin.classList.toggle('modal--log-in--active');
+
+})
+
 modalContact.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--contact')){
 		contact.classList.remove('nav__btn-contact--active');
@@ -55,6 +64,13 @@ modalContact.addEventListener("click", function (evt) {
 modalSignUp.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--sign-up')){
 		modalSignUp.classList.remove('modal--sign-up--active');
+	}
+})
+
+modallogin.addEventListener("click", function (evt) {
+	if(evt.target.classList.contains('modal--log-in')){
+		modallogin.classList.remove('modal--log-in--active');
+		login.classList.toggle('profile__log-in--active');
 	}
 })
 

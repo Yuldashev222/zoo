@@ -1,7 +1,7 @@
 .hero {
 	padding: 48px 0 80px;
 	background: url("../img/hero-bg.png") no-repeat center center;
-	background-size: cover;
+	background-size: contain auto;
 }
 .hero__container {
 	display: flex;
@@ -16,9 +16,13 @@
 .hero__headline {
 	margin-bottom: 27px;
 	font-family: "Rubik";
-	font-weight: 300;
+	font-weight: 100;
 	font-size: 72px;
 	line-height: 85px;
+}
+
+.hero__headline-bold {
+	font-weight: 500;
 }
 .hero__description {
 	width: 480px;
@@ -35,4 +39,100 @@
 	display: block;
 
 	position: relative;
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.hero {
+		padding: 46px 0 150px;
+		background: url("../img/smalldesktop-hero-bg.png") no-repeat bottom center;
+		background-size: cover;
+	}
+	.hero__content {
+		margin-top: 50px;
+		width: 576px;
+	}
+	.hero__headline {
+		margin-bottom: 30px;
+		font-size: 64px;
+		line-height: 76px;
+	}
+	.hero__description {
+		margin-bottom: 37px;
+
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.hero__video {
+		background: url("../img/hero-wrapper.png") no-repeat center center;
+		background-size: contain;
+		width: 560px;
+		height: 464px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.hero {
+		padding: 30px 0 150px;
+		background: url("../img/tablet-hero-bg.png") no-repeat;
+		background-position: right bottom;
+		background-size: cover;
+	}
+	.hero__container {
+		align-items: center;
+	}
+	.hero__content {
+		margin-top: 0;
+		width: 324px;
+	}
+	.hero__headline {
+		margin-bottom: 20px;
+
+		font-size: 36px;
+		line-height: 43px;
+	}
+	.hero__description {
+		width: 310px;
+		margin-bottom: 30px;
+	}
+	.hero__video {
+		background: url("../img/hero-wrapper.png") no-repeat center center;
+		background-size: contain;
+		width: 255px;
+		height: 211px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.hero {
+		padding: 20px 0 60px;
+		background: url("../img/mobile-hero-bg.png") no-repeat;
+		background-position: bottom center; 
+		background-size: cover;
+	}
+	.hero__container {
+		display: flex;
+		justify-content:unset;
+		flex-direction: column-reverse;
+	}
+	.hero__content {
+		margin-top: 16px;
+		width: 100%;
+
+		color: #f3f7f8;
+	}
+	.hero__headline {
+		margin-bottom: 18px;
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.hero__description {
+		width: 100%;
+		margin-bottom: 18px;
+	}
+	.hero__video {
+		background: url("../img/hero-wrapper.png") no-repeat center center;
+		background-size: contain;
+		width: 255px;
+		height: 211px;
+	}
 }

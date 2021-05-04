@@ -20,6 +20,7 @@
 	align-items: center;
 }
 .header__logo {
+	display: block;
 	width: 108px;
 	height: 84px;
 }
@@ -31,5 +32,25 @@
 @media screen and (max-width: $smallDesktop) {
 	.header {
 		padding: 20px 30px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.header {
+		padding: 20px 0;
+	}
+	.header__logo {
+		width: 49px;
+		height: 38px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.header {
+		padding: 7px 0 5px;
+	}
+	.header__logo {
+		width: 49px;
+		height: 38px;
 	}
 }

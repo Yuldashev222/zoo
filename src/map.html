@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Map</title>
+</head>
+<body>
+
+	<div class="visually-hidden">
+			<include src="dist/img/sprite.svg"></include>
+		</div>
+		<h1 class="visually-hidden">map</h1>
+
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link nav__btn" href="index.html">about</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__btn" id="borderBottom" href="map.html">map</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link nav__btn" href="zoos.html">zoos</a>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn nav__btn-contact" type="button">contact us</button>
+
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">design</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__right">
+					<div class="search">
+						<input class="search__input" type="checkbox" id="check" />
+						<div class="search__box">
+							<input
+								class="search__box-input"
+								type="text"
+								placeholder="Search"
+							/>
+							<label class="search__box-label" for="check">
+								<svg width="32" height="32">
+									<use xlink:href="#icon-search"></use>
+								</svg>
+							</label>
+						</div>
+					</div>
+
+					<div class="profile">
+						<button class="profile__log-in" type="button">Log in</button>
+						<button class="profile__sign-up" type="button">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="map">
+				<div class="container">
+					<p class="map__title">Choose your favorite Animal</p>
+					
+					<div class="map__content">
+						<ul class="map__content-list">
+							<li class="map__content-item">
+								<a class="map__content-link" href="eagles.html">
+									<img src="./img/eagle-sidebar.png" width="60" height="55" alt="">
+								</a>
+							</li>
+							<li class="map__content-item">
+								<a class="map__content-link" href="zoos.html">
+									<img src="./img/panda-sidebar.png" width="60" height="55" alt="">
+								</a>
+							</li>
+							<li class="map__content-item">
+								<a class="map__content-link" href="gorillas.html">
+									<img src="./img/gorilla-sidebar.png" width="60" height="55" alt="">
+								</a>
+							</li>
+							<li class="map__content-item">
+								<a class="map__content-link" href="alligators.html">
+									<img src="./img/alligator-sidebar.png" width="60" height="55" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="zoom">
+						<button class="zoom__zoom-in" type="button">
+							<svg width="20" height="20">
+								<use xlink:href="#icon-plus"></use>
+							</svg>
+						</button>
+						<button class="zoom__zoom-out" type="button">
+							<svg width="20" height="20">
+								<use xlink:href="#icon-minus"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="header__left">
+					<a class="header__logo" href="index.html">
+						<svg width="108" height="84">
+							<use xlink:href="#icon-header-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__btn" href="index.html">about</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__btn" id="borderBottom" href="map.html">MAP</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__btn" href="zoos.html">Zoos</a>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">contact us</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">design</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__right">
+					<div class="footer__copyright">
+						<p>Design by Lemeshko Kateryna</p>
+						<p>©RSSchool and ©Yem Digital 2021</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+</body>
+</html>

@@ -1,0 +1,64 @@
+.map {
+	padding: 30px 0;
+
+	background-color: #2a8086;
+}
+.map__title {
+	margin-bottom: 54px;
+
+	font-family: "Rubik";
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #c5e1e6;
+}
+.map__content {
+	padding-left: 327px;
+	height: 852px;
+	background: url("../img/map.svg") no-repeat center center;
+	background-size: cover;
+
+	position: relative;
+}
+.map__content-item {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+
+
+	&:first-child {
+		left: 170px;
+		top: 340px;
+	}
+
+	&:nth-child(2) {
+		left: 330px;
+		top: 405px;
+	}
+
+	&:nth-child(3) {
+		left: 680px;
+		top: 500px;
+	}
+
+	&:last-child {
+		left: unset;
+		right: 320px;
+		top: 380px;
+	}
+
+}
+.map__content-link {
+	padding: 7px;
+	display: block;
+	
+	text-align: center;
+	width: 90px;
+	height: 77px;
+	
+	&:hover {
+		background: url("../img/map-avatar-shadow.png") no-repeat center center;
+		background-size: cover;
+	}
+}

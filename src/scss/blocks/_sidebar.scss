@@ -6,7 +6,7 @@
 
 	width: $sidebar-width;
 
-	background: rgba(#fff, .9);
+	background: rgba(#fff, 0.9);
 	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
 }
 .sidebar__content {
@@ -47,6 +47,12 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #2d2d2d;
+
+	transition: all 0.2s linear;
+
+	&:hover {
+		opacity: 0.85;
+	}
 }
 
 .sidebar__animal-wrapper {

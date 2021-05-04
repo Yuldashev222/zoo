@@ -7,3 +7,33 @@
 		max-width: 1345px;
 	}
 }
+
+@media screen and (max-width: $smallDesktop) {
+	.container {
+		max-width: 1158px;
+
+		&--zoos {
+			max-width: 1028px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.container {
+		max-width: 620px;
+
+		&--zoos {
+			max-width: 550px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.container {
+		max-width: 320px;
+
+		&--zoos {
+			max-width: 320px;
+		}
+	}
+}

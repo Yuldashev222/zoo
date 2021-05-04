@@ -12,4 +12,51 @@
 		background: darken(#fff, 5%);
 		box-shadow: 0px 2px 10px rgba(185, 213, 217, 0.6);
 	}
+
+	&--donate {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.link {
+		padding: 10px 50px;
+
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -1.05px;
+
+		&--donate {
+			display: inline-block;
+
+			padding: 10px 49px;
+			letter-spacing: 2px;
+
+			background: #c5e1e6;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.link {
+		display: inline-block;
+		padding: 9px 34px;
+
+		text-decoration: none;
+		color: $Green;
+
+		background: #fff;
+		box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+		border-radius: 100px;
+
+		&:hover {
+			background: darken(#fff, 5%);
+			box-shadow: 0px 2px 10px rgba(185, 213, 217, 0.6);
+		}
+
+		&--donate {
+			display: none;
+		}
+	}
 }
