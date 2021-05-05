@@ -26,3 +26,33 @@
 		}
 	}
 }
+
+@media screen and (max-width: $smallDesktop) {
+	.footer {
+		padding: 17px 0 20px;
+	}
+
+	.footer__copyright {
+		font-size: 12px;
+		line-height: 14px;
+
+		p {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.footer {
+		padding: 22px 0 18px;
+	}
+
+	.footer__copyright {
+		font-size: 10px;
+		line-height: 12px;
+
+		p {
+			margin-bottom: 4px;
+		}
+	}
+}

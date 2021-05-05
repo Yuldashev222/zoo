@@ -143,6 +143,9 @@
 <path d="M272.5 15.5L281.853 25.6009C282.215 25.9923 282.206 26.5994 281.833 26.9804L272.5 36.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 <path d="M267.5 15.5L276.853 25.6009C277.215 25.9923 277.206 26.5994 276.833 26.9804L267.5 36.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 <path d="M1 26H267.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
+</symbol><symbol id="icon-white-arrow" viewBox="0 0 17 24">
+<path d="M6.5 1.5L15.8527 11.6009C16.2151 11.9923 16.2065 12.5994 15.833 12.9804L6.5 22.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M1.5 1.5L10.8527 11.6009C11.2151 11.9923 11.2065 12.5994 10.833 12.9804L1.5 22.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 </symbol></svg>
 		</div>
 		<h1 class="visually-hidden">Zoo site</h1>
@@ -354,6 +357,7 @@
 							</a>
 						</li>
 					</ul>
+					<button class="btn btn-lower btn--pets" type="button">Choose your Favorite</button>
 				</div>
 			</section>
 
@@ -377,12 +381,13 @@
 								<p>Animals are healthy and happy</p>
 							</li>
 						</ol>
+						<button class="btn btn--feeding btn-lower btn-lower--feeding" type="button">	Donate to volunteers</button>
 					</div>
 				</div>
 			</section>
 
 			<section class="testimonials">
-				<div class="container">
+				<div class="container testimonials__container">
 					<div class="selection-header selection-header--testimonials">
 						<h2 class="selection__title">testimonials</h2>
 						<button class="btn btn--testimonials" type="button">
@@ -439,6 +444,8 @@
 							</div>
 						</li>
 					</ul>
+
+					<button class="btn btn--testimonials btn-lower" type="button"> Leave feedback	</button>
 				</div>
 			</section>
 
@@ -452,7 +459,7 @@
 						<ul class="selection__list selection__list--animals-list">
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -460,7 +467,7 @@
 							</li>
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -468,7 +475,7 @@
 							</li>
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -476,7 +483,7 @@
 							</li>
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -484,7 +491,7 @@
 							</li>
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -492,7 +499,7 @@
 							</li>
 							<li class="selection__item selection__item--animals-list">
 								<a class="selection__item-link--animals-list" href="#">
-									<img class="selection__item-img selection__item-img--animals-list" width="76" height="73" src="./img/avatar-monkey.png" alt="avatar monkey">
+									<img class="selection__item-img selection__item-img--animals-list" src="./img/avatar-monkey.png" alt="avatar monkey">
 									<h3 class="selection__item-title selection__item-title--animals-list">
 										Pandas
 									</h3>
@@ -516,8 +523,8 @@
 		<footer class="footer">
 			<div class="container footer__container">
 				<div class="header__left">
-					<a class="header__logo" href="index.html">
-						<svg width="108" height="84">
+					<a class="header__link" href="index.html">
+						<svg class="header__logo">
 							<use xlink:href="#icon-header-logo"></use>
 						</svg>
 					</a>

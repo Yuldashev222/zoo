@@ -11,14 +11,14 @@
 	display: block;
 }
 .next__left {
-	margin-top: 30px;
+	// margin-top: 30px;
 	transform: rotate(180deg);
 
 	&--pets {
 		position: absolute;
 
-		right: -85px;
-		top: 50%;
+		right: -50px;
+		top: 49%;
 		transform: translateY(150%) rotate(180deg);
 	}
 
@@ -34,8 +34,8 @@
 	&--pets {
 		position: absolute;
 
-		right: -85px;
-		top: 50%;
+		right: -50px;
+		top: 48%;
 	}
 
 	&--side-cameras {
@@ -43,5 +43,75 @@
 
 		right: 50px;
 		top: 35%;
+	}
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.next__left {
+		margin-top: 30px;
+
+		&--pets {
+			position: absolute;
+
+			right: 60px;
+			top: 45%;
+		}
+	}
+
+	.next__right {
+		&--pets {
+			right: 60px;
+			top: 47%;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.next__left {
+		&--pets {
+			right: 30px;
+			top: 49%;
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+
+	.next__right {
+		&--pets {
+			right: 30px;
+			top: 46%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.next__left {
+		&--pets {
+			right: 20px;
+			top: 47%;
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+
+	.next__right {
+		&--pets {
+			right: 20px;
+			top: 43%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.animals-list {
+		.next {
+			margin-left: 0;
+		}
+
+		.next__left {
+			display: none;
+		}
+
+		.next__right {
+			transform: rotate(90deg);
+		}
 	}
 }

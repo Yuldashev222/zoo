@@ -1,3 +1,27 @@
 .testimonials {
 	margin-bottom: 100px;
 }
+
+@media screen and (max-width: $tablet) {
+	.testimonials {
+		margin-bottom: 50px;
+		padding-bottom: 242px;
+		overflow: hidden;
+	}
+
+	.testimonials__container {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.testimonials {
+		margin-bottom: 42px;
+		padding-bottom: 0;
+		overflow: unset;
+	}
+
+	.testimonials__container {
+		position: static;
+	}
+}

@@ -1,8 +1,26 @@
 .animals-list {
-	margin-bottom: 117px;
+	margin-bottom: 100px;
 }
 
 .animals-list__content {
 	display: flex;
 	align-items: center;
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.animals-list {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.animals-list {
+		margin-bottom: 26px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.animals-list {
+		margin-bottom: 30px;
+	}
 }
