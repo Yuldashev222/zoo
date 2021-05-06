@@ -1,23 +1,23 @@
 .embed {
 	display: none;
-	
+
 	overflow: hidden;
-	width: 900px;
-	height: 650px;
-	
+	width: 803px;
+	height: 680px;
+
 	position: relative;
 	left: 0;
-	top: 50%;
+	top: 49%;
 	transform: translateY(-50%);
-	
+
 	border-radius: 20px;
-	
+
 	&::before {
 		content: "";
 		display: block;
 		padding-top: 56.25%;
 	}
-	
+
 	iframe,
 	video,
 	object,
@@ -25,11 +25,32 @@
 		width: 100%;
 		height: 100%;
 
-		
 		position: absolute;
 		left: 0;
 		top: 0;
 		z-index: 1;
 	}
+}
 
+@media screen and (max-width: $smallDesktop) {
+	.embed {
+		width: 560px;
+		height: 493px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.embed {
+		width: 257px;
+		height: 222px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.embed {
+		left: -20px;
+
+		width: 300px;
+		height: 235px;
+	}
 }

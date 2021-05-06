@@ -42,12 +42,17 @@
 	border-radius: 100px;
 }
 
+.profile-tablet {
+	@include btnNone;
+}
+
 @media screen and (max-width: $smallDesktop) {
 	.profile {
+		margin-left: 30px;
+	}
+	.profile-tablet {
 		display: block;
 		cursor: pointer;
-
-		margin-left: 30px;
 
 		width: 56px;
 		height: 56px;
@@ -58,7 +63,11 @@
 		position: relative;
 
 		&:hover {
-			background: rgba(#b9D5D9, .9)
+			background: rgba(#b9d5d9, 0.9);
+
+			&::before {
+				transform: translate(-50%, -50%) scale(1.5);
+			}
 		}
 
 		&::before {
@@ -74,6 +83,8 @@
 
 			background: url("../../img/icon-profile.png") no-repeat center center;
 			background-size: contain;
+
+			transition: all 0.2s linear;
 		}
 	}
 
@@ -84,7 +95,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-	.profile {
+	.profile-tablet {
 		display: none;
 	}
 }

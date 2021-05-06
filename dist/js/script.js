@@ -5,13 +5,15 @@ var modal = document.querySelector(".modal");
 var modalContent = document.querySelector(".modal__content");
 
 var contact = document.querySelector(".nav__btn-contact");
+var subBtn = document.querySelector("#nav__sub-btn");
 var modalContact = document.querySelector(".modal--contact");
 var borderBottom = document.querySelector(".nav__link-borderbottom");
+var sub_borderBottom = document.querySelector("#borderBottom");
 
 var feedback = document.querySelector(".btn--testimonials");
 var modalFeedback = document.querySelector(".modal--feedback");
 
-var feeding = document.querySelector(".btn--feeding");
+var feeding = document.querySelector("#feeding");
 var modalFeeding = document.querySelector(".modal--feeding");
 
 var signUp = document.querySelector(".profile__sign-up");
@@ -20,15 +22,16 @@ var modalSignUp = document.querySelector(".modal--sign-up");
 var login = document.querySelector(".profile__log-in");
 var modallogin = document.querySelector(".modal--log-in");
 
-var profile = document.querySelector(".profile");
+var profile = document.querySelector(".profile-tablet");
 
 var hamburger = document.querySelector(".hamburger-button");
 var nav = document.querySelector(".nav");
+var body = document.querySelector("body");
 
 hamburger.addEventListener("click", function () {
 	hamburger.classList.toggle("hamburger-button--active");
 	nav.classList.toggle("nav--active");
-
+	body.classList.toggle("body--active");
 })
 
 function closeVideo(evt) {
@@ -43,8 +46,18 @@ playBtn.addEventListener("click", () => {
 
 contact.addEventListener("click", function () {
 	contact.classList.toggle('nav__btn-contact--active');
+	subBtn.classList.toggle('nav__btn-contact--active');
 	modalContact.classList.toggle('modal--contact--active');
 	borderBottom.classList.toggle("nav__link-borderbottom");
+	sub_borderBottom.classList.toggle("nav__link-borderbottom");
+})
+
+subBtn.addEventListener("click", function () {
+	contact.classList.toggle('nav__btn-contact--active');
+	subBtn.classList.toggle('nav__btn-contact--active');
+	modalContact.classList.toggle('modal--contact--active');
+	borderBottom.classList.toggle("nav__link-borderbottom");
+	sub_borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
 feedback.addEventListener("click", function () {
@@ -56,7 +69,7 @@ feeding.addEventListener("click", function () {
 })
 
 signUp.addEventListener("click", function () {
-	signUp.classList.toggle('profile__sign-up--active');
+	// signUp.classList.toggle('profile__sign-up--active');
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
@@ -73,9 +86,10 @@ login.addEventListener("click", function () {
 modalContact.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--contact')){
 		contact.classList.remove('nav__btn-contact--active');
+		subBtn.classList.toggle('nav__btn-contact--active');
 		modalContact.classList.remove('modal--contact--active');
 		borderBottom.classList.toggle("nav__link-borderbottom")
-		
+		sub_borderBottom.classList.toggle("nav__link-borderbottom")
 	}
 })
 

@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/main.min.css" />
 		<title>About</title>
 	</head>
-	<body>
+	<body class="body">
 		<div class="visually-hidden">
 			<include src="dist/img/sprite.svg"></include>
 		</div>
@@ -25,7 +25,9 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a class="nav__link nav__link-borderbottom nav__btn " href="#">about</a>
+								<a class="nav__link nav__link-borderbottom nav__btn" href="#"
+									>about</a
+								>
 							</li>
 							<li class="nav__item">
 								<a class="nav__btn" href="map.html">map</a>
@@ -34,17 +36,21 @@
 								<a class="nav__link nav__btn" href="zoos.html">zoos</a>
 							</li>
 							<li class="nav__item">
-								<button class="nav__btn nav__btn-contact" type="button">contact us</button>
+								<button class="nav__btn nav__btn-contact" type="button">
+									contact us
+								</button>
 							</li>
 							<li class="nav__item">
 								<button class="nav__btn" type="button">design</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn" type="button">my account</button>
 							</li>
 						</ul>
 					</nav>
 				</div>
 
 				<div class="header__right">
-
 					<button class="hamburger-button">
 						<span class="hamburger-button__inner"></span>
 					</button>
@@ -68,6 +74,7 @@
 					<div class="profile">
 						<button class="profile__log-in" type="button">Log in</button>
 						<button class="profile__sign-up" type="button">Sign up</button>
+						<button class="profile-tablet"></button>
 					</div>
 				</div>
 			</div>
@@ -77,7 +84,10 @@
 			<div class="hero">
 				<div class="container hero__container">
 					<div class="hero__content">
-						<p class="hero__headline">Watch your favorite <strong class="hero__headline-bold">animals online</strong></p>
+						<p class="hero__headline">
+							Watch your favorite
+							<strong class="hero__headline-bold">animals online</strong>
+						</p>
 						<div class="hero__description">
 							Observe different animals from around the world online in live
 							time. Help vulunteers to take a good care of animals, donate to
@@ -85,7 +95,12 @@
 						</div>
 						<div class="links">
 							<a class="link" href="#">Watch now</a>
-							<button class="btn btn--feeding btn-lower btn-lower--hero" type="button">Donate</button>
+							<button
+								class="btn btn--feeding btn-lower btn-lower--hero"
+								type="button"
+							>
+								Donate
+							</button>
 						</div>
 					</div>
 
@@ -98,9 +113,9 @@
 								height="315"
 								src="https://www.youtube.com/embed/D0eqnda8dOk"
 								title="YouTube video player"
-								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen>
+								allowfullscreen
+							>
 							</iframe>
 						</div>
 					</div>
@@ -288,7 +303,9 @@
 							</a>
 						</li>
 					</ul>
-					<button class="btn btn-lower btn--pets" type="button">Choose your Favorite</button>
+					<button class="btn btn-lower btn--pets" type="button">
+						Choose your Favorite
+					</button>
 				</div>
 			</section>
 
@@ -297,7 +314,7 @@
 					<div class="steps">
 						<div class="feeding__steps-header">
 							<h2 class="steps__title feeding__steps-title">Pay and feed</h2>
-							<button class="btn btn--feeding" type="button">
+							<button class="btn btn--feeding" id="feeding" type="button">
 								Donate to volunteers
 							</button>
 						</div>
@@ -312,7 +329,12 @@
 								<p>Animals are healthy and happy</p>
 							</li>
 						</ol>
-						<button class="btn btn--feeding btn-lower btn-lower--feeding" type="button">	Donate to volunteers</button>
+						<button
+							class="btn btn--feeding btn-lower btn-lower--feeding"
+							type="button"
+						>
+							Donate to volunteers
+						</button>
 					</div>
 				</div>
 			</section>
@@ -424,7 +446,9 @@
 						</li>
 					</ul>
 
-					<button class="btn btn--testimonials btn-lower" type="button"> Leave feedback	</button>
+					<button class="btn btn--testimonials btn-lower" type="button">
+						Leave feedback
+					</button>
 				</div>
 			</section>
 
@@ -547,7 +571,11 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a class= "nav__link nav__btn nav__link-borderbottom" href="index.html">about</a>
+								<a
+									class="nav__link nav__btn nav__link-borderbottom" id="borderBottom"
+									href="index.html"
+									>about</a
+								>
 							</li>
 							<li class="nav__item">
 								<a class="nav__btn" href="map.html">MAP</a>
@@ -556,7 +584,9 @@
 								<a class="nav__btn" href="zoos.html">Zoos</a>
 							</li>
 							<li class="nav__item">
-								<button class="nav__btn nav__btn-contact" type="button">contact us</button>
+								<button class="nav__btn nav__btn-contact" id="nav__sub-btn" type="button">
+									contact us
+								</button>
 							</li>
 							<li class="nav__item">
 								<button class="nav__btn" type="button">design</button>
@@ -577,201 +607,318 @@
 		<div class="modal modal--sign-up">
 			<div class="modal__content">
 				<div class="modal__content-header">
-					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+					<img
+						class="modal__logo"
+						width="78"
+						height="61"
+						src="./img/icon-header-logo.svg"
+						alt="logo"
+					/>
 				</div>
 
 				<div class="modal__content-main">
 					<form class="modal__form" action="/" method="POST">
-						<input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
-						<label class="modal__label-check" for="create">Create acccount</label>
-						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
+						<input
+							class="visually-hidden modal__input-check-create"
+							id="create"
+							checked
+							type="radio"
+							name="registration"
+						/>
+						<label class="modal__label-check" for="create"
+							>Create acccount</label
+						>
+						<input
+							class="visually-hidden modal__input-check-login"
+							id="login"
+							type="radio"
+							name="registration"
+						/>
 						<label class="modal__label-check" for="login">Log in</label>
 
 						<div class="modal__social-btns">
-							<button class="modal__social-btn" type="button">Google Sign in</button>
-							<button class="modal__social-btn" type="button">Facebook Sign in</button>
+							<button class="modal__social-btn" type="button">
+								Google Sign in
+							</button>
+							<button class="modal__social-btn" type="button">
+								Facebook Sign in
+							</button>
 						</div>
 
 						<label class="modal__label modal__label-name">
 							Name
-							<input class="modal__input" type="name" required>
+							<input class="modal__input" type="text" name="name" required />
 						</label>
 
 						<label class="modal__label">
 							Email
-							<input class="modal__input" type="email" required>
+							<input class="modal__input" type="email" required />
 						</label>
-						
+
 						<label class="modal__label">
 							password
-							<input class="modal__input" type="password" required>
+							<input class="modal__input" type="password" required />
 						</label>
 
 						<label class="modal__label-privacy">
-							<input class="modal__input-privacy" type="checkbox" required>
-							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+							<input class="modal__input-privacy" type="checkbox" required />
+							Agree with the <a href="#">User Agreement</a> and
+							<a href="#">Privacy Policy</a>
 						</label>
 
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
 				</div>
-			</div> 
+			</div>
 		</div>
 
 		<div class="modal modal--log-in">
 			<div class="modal__content">
 				<div class="modal__content-header">
-					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+					<img
+						class="modal__logo"
+						width="78"
+						height="61"
+						src="./img/icon-header-logo.svg"
+						alt="logo"
+					/>
 				</div>
 
 				<div class="modal__content-main">
 					<form class="modal__form" action="/" method="POST">
-						<input class="visually-hidden modal__input-check-login" id="login" checked type="radio" name="registration">
-						<label class="modal__label-check" for="login">Log in</label>
-						<input class="visually-hidden modal__input-check-create" id="create" type="radio" name="registration">
-						<label class="modal__label-check" for="create">Create acccount</label>
+						<input
+							class="visually-hidden modal__input-check-login"
+							id="login2"
+							checked
+							type="radio"
+							name="registration"
+						/>
+						<label class="modal__label-check" for="login2">Log in</label>
+						<input
+							class="visually-hidden modal__input-check-create"
+							id="create2"
+							type="radio"
+							name="registration"
+						/>
+						<label class="modal__label-check" for="create2"
+							>Create acccount</label
+						>
 
 						<div class="modal__social-btns">
-							<button class="modal__social-btn" type="button">Google Sign in</button>
-							<button class="modal__social-btn" type="button">Facebook Sign in</button>
+							<button class="modal__social-btn" type="button">
+								Google Sign in
+							</button>
+							<button class="modal__social-btn" type="button">
+								Facebook Sign in
+							</button>
 						</div>
 
 						<label class="modal__label modal__label-name">
 							Name
-							<input class="modal__input" type="name" required>
+							<input class="modal__input" type="text" name="name" required />
 						</label>
 
 						<label class="modal__label">
 							Email
-							<input class="modal__input" type="email" required>
+							<input class="modal__input" type="email" required />
 						</label>
-						
+
 						<label class="modal__label">
 							password
-							<input class="modal__input" type="password" required>
+							<input class="modal__input" type="password" required />
 						</label>
 
 						<label class="modal__label-privacy">
-							<input class="modal__input-privacy" type="checkbox" required>
-							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+							<input class="modal__input-privacy" type="checkbox" required />
+							Agree with the <a href="#">User Agreement</a> and
+							<a href="#">Privacy Policy</a>
 						</label>
 
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
 				</div>
-			</div> 
+			</div>
 		</div>
 
 		<div class="modal modal--contact">
 			<div class="modal__content">
-
 				<div class="modal__content-main">
 					<h2 class="modal__content-title">Contact us</h2>
 					<form class="modal__form" action="/" method="POST">
 						<label class="modal__label modal__label-name">
 							Name
-							<input class="modal__input" type="name" required>
+							<input class="modal__input" type="text" name="name" required />
 						</label>
 
 						<label class="modal__label">
 							Email
-							<input class="modal__input" type="email" required>
+							<input class="modal__input" type="email" required />
 						</label>
 
 						<label class="modal__label">
 							Your Message
-							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+							<textarea
+								class="modal__input modal__input-textarea"
+								required
+							></textarea>
 						</label>
-						
+
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
 				</div>
-			</div> 
-		</div> 
+			</div>
+		</div>
 
 		<div class="modal modal--feedback">
 			<div class="modal__content">
-
 				<div class="modal__content-main">
 					<h2 class="modal__content-title">Leave feedback</h2>
 					<form class="modal__form" action="/" method="POST">
 						<label class="modal__label modal__label-name">
 							Name
-							<input class="modal__input" type="name" required>
+							<input class="modal__input" type="text" name="name" required />
 						</label>
 
 						<label class="modal__label">
 							Email
-							<input class="modal__input" type="email" required>
+							<input class="modal__input" type="email" required />
 						</label>
 
 						<label class="modal__label">
 							Feedback
-							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
+							<textarea
+								class="modal__input modal__input-textarea"
+								required
+							></textarea>
 						</label>
-						
+
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
 				</div>
-			</div> 
-		</div> 
+			</div>
+		</div>
 
 		<div class="modal modal--feeding">
 			<div class="modal__content">
-
 				<div class="modal__content-main">
 					<h2 class="modal__content-title">Donate to volunteers</h2>
-					<p class="modal__content-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
+					<p class="modal__content-text">
+						Support your favourite animals. It is as simple as buying a cup of
+						coffee.
+					</p>
 
 					<form class="modal__form" action="/" method="POST">
 						<label class="modal__label modal__label-name">
 							Choose an animal
-							<input class="modal__input" type="text" required>
+							<input class="modal__input" type="text" required />
 						</label>
 
 						<label class="modal__label modal__label-payments">Payments</label>
-						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked type="radio" name="registration">
-						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
-						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
-						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
+						<input
+							class="visually-hidden modal__input-check-create"
+							id="create-feeding"
+							checked
+							type="radio"
+							name="registration"
+						/>
+						<label
+							class="modal__label-check--feeding modal__label-create-check--feeding"
+							for="create-feeding"
+							>Monthly</label
+						>
+						<input
+							class="visually-hidden modal__input-check-login"
+							id="login-feeding"
+							type="radio"
+							name="registration"
+						/>
+						<label class="modal__label-check--feeding" for="login-feeding"
+							>One-time</label
+						>
 
 						<div class="modal__price">
-							<input class="visually-hidden modal__input-price" id="$3" checked type="radio" name="price">
+							<input
+								class="visually-hidden modal__input-price"
+								id="$3"
+								checked
+								type="radio"
+								name="price"
+							/>
 							<label class="modal__label-price" for="$3">$3</label>
-							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
+							<input
+								class="visually-hidden modal__input-price"
+								id="$5"
+								type="radio"
+								name="price"
+							/>
 							<label class="modal__label-price" for="$5">$5</label>
-							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
+							<input
+								class="visually-hidden modal__input-price"
+								id="$10"
+								type="radio"
+								name="price"
+							/>
 							<label class="modal__label-price" for="$10">$10</label>
-							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
+							<input
+								class="visually-hidden modal__input-price"
+								id="$25"
+								type="radio"
+								name="price"
+							/>
 							<label class="modal__label-price" for="$25">$25</label>
 						</div>
 
 						<label class="modal__label">
 							Your name
-							<input class="modal__input" type="name" required>
+							<input class="modal__input" type="text" name="name" required />
 						</label>
 
 						<label class="modal__label">
 							Your Email
-							<input class="modal__input" type="email" required></input>
+							<input class="modal__input" type="email" required />
 						</label>
 
-						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
+						<img
+							class="modal__content-payment-img"
+							src="./img/icon-payment-methods.svg"
+							alt="payment methods"
+						/>
 						<div class="modal__content-payment">
 							<label class="modal__label modal__label--feeding">
-								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
-								<input class="modal__input modal__input--feeding" type="number" name="card_number" required placeholder="Card Number"></input>
+								<img
+									src="./img/icon-card.svg"
+									width="24"
+									height="24"
+									alt="card"
+								/>
+								<input
+									class="modal__input modal__input--feeding"
+									type="number"
+									name="card_number"
+									required
+									placeholder="Card Number"
+								/>
 							</label>
 
 							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="number" required placeholder="MM / YY"></input>
+								<input
+									class="modal__input modal__input--feeding"
+									type="number"
+									required
+									placeholder="MM / YY"
+								/>
 							</label>
 
 							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="text" required placeholder="CVC"></input>
+								<input
+									class="modal__input modal__input--feeding"
+									type="text"
+									required
+									placeholder="CVC"
+								/>
 							</label>
 						</div>
-						
+
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
 
@@ -779,10 +926,8 @@
 						<p>Your payment is protected</p>
 					</div>
 				</div>
-				
-			</div> 
-		</div> 
-
+			</div>
+		</div>
 
 		<script src="js/script.js"></script>
 	</body>

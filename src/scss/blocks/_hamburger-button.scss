@@ -3,7 +3,7 @@
 	padding: 0;
 	border: none;
 	background-color: transparent;
-	display: block;
+	display: none;
 	margin-left: auto;
 	outline: none;
 	cursor: pointer;
@@ -18,7 +18,7 @@
 	width: 24px;
 	height: 2px;
 	display: block;
-	background-color: #C5E1E6;
+	background-color: #c5e1e6;
 	margin-bottom: 8px;
 	transition: all 0.3s ease 0s;
 }
@@ -34,7 +34,7 @@
 .hamburger-button--active {
 	&::before {
 		position: relative;
-		top: 3px;
+		top: 2px;
 		margin-bottom: 0;
 		transform: rotate(45deg);
 	}
@@ -45,7 +45,7 @@
 	}
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
 	.hamburger-button {
 		margin: 0;
 		display: block;
