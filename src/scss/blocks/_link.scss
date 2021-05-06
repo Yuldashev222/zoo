@@ -18,6 +18,10 @@
 	}
 }
 
+.links {
+	display: flex;
+}
+
 @media screen and (max-width: $tablet) {
 	.link {
 		padding: 10px 50px;
@@ -36,12 +40,22 @@
 			background: #c5e1e6;
 		}
 	}
+
+	.hero {
+		.btn {
+			margin-left: 16px;
+		}
+	}
+
+	.links {
+		width: 360px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
 	.link {
 		display: inline-block;
-		padding: 9px 34px;
+		padding: 10px 34px;
 
 		text-decoration: none;
 		color: $Green;
@@ -57,6 +71,22 @@
 
 		&--donate {
 			display: none;
+		}
+	}
+	.hero {
+		.btn {
+			margin-left: 0;
+			width: 50%;
+		}
+	}
+
+	.links {
+		width: 100%;
+		justify-content: space-between;
+
+		.link {
+			width: 50%;
+			margin-right: 10px;
 		}
 	}
 }

@@ -1,0 +1,53 @@
+.hamburger-button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	display: block;
+	margin-left: auto;
+	outline: none;
+	cursor: pointer;
+}
+
+.hamburger-button::before,
+.hamburger-button__inner,
+.hamburger-button::after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 2px;
+	display: block;
+	background-color: #C5E1E6;
+	margin-bottom: 8px;
+	transition: all 0.3s ease 0s;
+}
+
+.hamburger-button::after {
+	margin-bottom: 0;
+}
+
+.hamburger-button--active .hamburger-button__inner {
+	display: none;
+}
+
+.hamburger-button--active {
+	&::before {
+		position: relative;
+		top: 3px;
+		margin-bottom: 0;
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		margin-bottom: 0;
+		transform: rotate(-45deg);
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.hamburger-button {
+		margin: 0;
+		display: block;
+	}
+}

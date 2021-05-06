@@ -92,6 +92,11 @@
 	&--testimonials {
 		border-radius: 50%;
 	}
+
+	&--animals-list {
+		width: 76px;
+		height: 73px;
+	}
 }
 .selection__item-title {
 	&--pets {
@@ -143,6 +148,10 @@
 
 	right: 20px;
 	bottom: 20px;
+
+	use {
+		fill: transparent ;
+	}
 }
 
 .selection__item-content {
@@ -179,6 +188,33 @@
 	display: block;
 	text-decoration: none;
 	color: inherit;
+}
+
+@media screen and (min-width: $smallDesktop) {
+	.selection__list--pets {
+		position: static;
+
+		justify-content: unset;
+
+		&::after {
+			content: "";
+			right: 0;
+			bottom: 30px;
+			width: 33px;
+			height: 66px;
+			display: block;
+
+			position: absolute;
+
+			background: url("../img/icon-Penguin.svg") no-repeat center center;
+			background-size: contain;
+		}
+	}
+
+	.selection__item--pets {
+		margin-left: 20px;
+		width: 450px;
+	}
 }
 
 @media screen and (max-width: $smallDesktop) {

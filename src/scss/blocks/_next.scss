@@ -46,6 +46,16 @@
 	}
 }
 
+@media screen and (min-width: $smallDesktop) {
+	.next__left--pets {
+		right: 0;
+	}
+
+	.next__right--pets {
+		right: 0;
+	}
+}
+
 @media screen and (max-width: $smallDesktop) {
 	.next__left {
 		margin-top: 30px;

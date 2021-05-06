@@ -20,12 +20,16 @@
 	transition: 0.2s linear;
 
 	&:hover {
-		opacity: 0.8;
-		border-bottom: 2px solid $LightGreen;
+		// opacity: 0.8;
+		// border-bottom: 2px solid $LightGreen;
 	}
 }
 
-#borderBottom {
+.nav--active {
+	display: block;
+}
+
+.nav__link-borderbottom {
 	border-bottom: 2px solid $LightGreen;
 }
 
@@ -48,13 +52,64 @@
 }
 
 @media screen and (max-width: $tablet) {
-	.nav {
-		display: none;
-	}
 }
 
 @media screen and (max-width: $mobile) {
 	.nav {
-		display: none;
+		position: absolute;
+		left: -100%;
+		top: 100%;
+
+		opacity: 0;
+		transition: all 0.6s linear;
+	}
+	.nav--active {
+		display: block;
+
+		position: absolute;
+		left: 0;
+		top: calc(100% + 10px);
+		width: 100%;
+		height: 100vh;
+
+		background: #2a8086;
+		opacity: 1;
+	}
+	.nav__list {
+		margin: 0;
+		margin-top: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.nav__item {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 32px;
+
+		transition: background 0.1s linear;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background: rgba(#c5e1e6, 0.4);
+		}
+	}
+	.nav__btn {
+		display: block;
+		margin: 0 auto;
+		padding: 14px 0;
+		font-weight: 700;
+		color: #f3f7f8;
+		border: none;
+
+		&:hover {
+			opacity: 1;
+			border: none;
+		}
 	}
 }

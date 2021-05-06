@@ -6,6 +6,7 @@ var modalContent = document.querySelector(".modal__content");
 
 var contact = document.querySelector(".nav__btn-contact");
 var modalContact = document.querySelector(".modal--contact");
+var borderBottom = document.querySelector(".nav__link-borderbottom");
 
 var feedback = document.querySelector(".btn--testimonials");
 var modalFeedback = document.querySelector(".modal--feedback");
@@ -18,6 +19,17 @@ var modalSignUp = document.querySelector(".modal--sign-up");
 
 var login = document.querySelector(".profile__log-in");
 var modallogin = document.querySelector(".modal--log-in");
+
+var profile = document.querySelector(".profile");
+
+var hamburger = document.querySelector(".hamburger-button");
+var nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", function () {
+	hamburger.classList.toggle("hamburger-button--active");
+	nav.classList.toggle("nav--active");
+
+})
 
 function closeVideo(evt) {
 		if(evt.currentTarget.matches('.hero') && !evt.target.matches('.play-btn')){
@@ -32,6 +44,7 @@ playBtn.addEventListener("click", () => {
 contact.addEventListener("click", function () {
 	contact.classList.toggle('nav__btn-contact--active');
 	modalContact.classList.toggle('modal--contact--active');
+	borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
 feedback.addEventListener("click", function () {
@@ -47,16 +60,21 @@ signUp.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
+profile.addEventListener("click", function () {
+	modalSignUp.classList.toggle('modal--sign-up--active');
+})
+
 login.addEventListener("click", function () {
 	login.classList.toggle('profile__log-in--active');
 	modallogin.classList.toggle('modal--log-in--active');
-
+	borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
 modalContact.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--contact')){
 		contact.classList.remove('nav__btn-contact--active');
 		modalContact.classList.remove('modal--contact--active');
+		borderBottom.classList.toggle("nav__link-borderbottom")
 		
 	}
 })
@@ -71,6 +89,7 @@ modallogin.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--log-in')){
 		modallogin.classList.remove('modal--log-in--active');
 		login.classList.toggle('profile__log-in--active');
+		borderBottom.classList.toggle("nav__link-borderbottom");
 	}
 })
 

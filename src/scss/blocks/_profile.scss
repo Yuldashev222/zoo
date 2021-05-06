@@ -42,13 +42,48 @@
 	border-radius: 100px;
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: $smallDesktop) {
 	.profile {
+		display: block;
+		cursor: pointer;
+
+		margin-left: 30px;
+
+		width: 56px;
+		height: 56px;
+
+		background: #b9d5d9;
+		border-radius: 50%;
+
+		position: relative;
+
+		&:hover {
+			background: rgba(#b9D5D9, .9)
+		}
+
+		&::before {
+			content: "";
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 24px;
+			height: 24px;
+			display: block;
+
+			position: absolute;
+
+			background: url("../../img/icon-profile.png") no-repeat center center;
+			background-size: contain;
+		}
+	}
+
+	.profile__log-in,
+	.profile__sign-up {
 		display: none;
 	}
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
 	.profile {
 		display: none;
 	}
