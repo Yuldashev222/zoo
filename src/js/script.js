@@ -11,9 +11,12 @@ var borderBottom = document.querySelector(".nav__link-borderbottom");
 var sub_borderBottom = document.querySelector("#borderBottom");
 
 var feedback = document.querySelector(".btn--testimonials");
+var feedbackAbove = document.querySelector("#subFeedback");
 var modalFeedback = document.querySelector(".modal--feedback");
 
 var feeding = document.querySelector("#feeding");
+var feedingAbove = document.querySelector("#feeding-above");
+var btnLower = document.querySelector(".btn-lower--feeding");
 var modalFeeding = document.querySelector(".modal--feeding");
 
 var signUp = document.querySelector(".profile__sign-up");
@@ -68,8 +71,19 @@ feeding.addEventListener("click", function () {
 	modalFeeding.classList.toggle('modal--feeding--active');
 })
 
+feedingAbove.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
+
+feedbackAbove.addEventListener("click", function () {
+	modalFeedback.classList.toggle('modal--feeding--active');
+})
+
+btnLower.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
+
 signUp.addEventListener("click", function () {
-	// signUp.classList.toggle('profile__sign-up--active');
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
@@ -81,6 +95,16 @@ login.addEventListener("click", function () {
 	login.classList.toggle('profile__log-in--active');
 	modallogin.classList.toggle('modal--log-in--active');
 	borderBottom.classList.toggle("nav__link-borderbottom");
+})
+
+modalContact.addEventListener("click", function (evt) {
+	if(evt.target.classList.contains('modal--contact')){
+		contact.classList.remove('nav__btn-contact--active');
+		subBtn.classList.toggle('nav__btn-contact--active');
+		modalContact.classList.remove('modal--contact--active');
+		borderBottom.classList.toggle("nav__link-borderbottom")
+		sub_borderBottom.classList.toggle("nav__link-borderbottom")
+	}
 })
 
 modalContact.addEventListener("click", function (evt) {

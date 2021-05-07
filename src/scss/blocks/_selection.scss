@@ -150,7 +150,7 @@
 	bottom: 20px;
 
 	use {
-		fill: transparent ;
+		fill: transparent;
 	}
 }
 
@@ -269,6 +269,10 @@
 				bottom: 72px;
 			}
 		}
+
+		&--animals-list:last-child {
+			display: none;
+		}
 	}
 
 	.selection__item-content {
@@ -377,7 +381,8 @@
 
 		&--animals-list {
 			&:last-child,
-			&:nth-child(5) {
+			&:nth-child(5),
+			&:nth-child(6) {
 				display: none;
 			}
 		}
@@ -475,9 +480,7 @@
 	}
 	.selection__item {
 		&:nth-child(3),
-		&:nth-child(4),
-		&:nth-child(5),
-		&:last-child {
+		&:nth-child(4) {
 			display: none;
 		}
 		&--pets {
