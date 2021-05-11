@@ -12,11 +12,11 @@
 			<include src="dist/img/sprite.svg"></include>
 		</div>
 
-		<header class="header">
-			<div class="container header__container">
+		<header class="header header--zoos">
+			<div class="container--zoos header__container">
 				<div class="header__left">
 					<a class="header__logo" href="index.html">
-						<svg width="108" height="84">
+						<svg class="header__logo">
 							<use xlink:href="#icon-header-logo"></use>
 						</svg>
 					</a>
@@ -45,6 +45,10 @@
 				</div>
 
 				<div class="header__right">
+					<button class="hamburger-button">
+						<span class="hamburger-button__inner"></span>
+					</button>
+					
 					<div class="search">
 						<input class="search__input" type="checkbox" id="check" />
 						<div class="search__box">
@@ -64,6 +68,7 @@
 					<div class="profile">
 						<button class="profile__log-in" type="button">Log in</button>
 						<button class="profile__sign-up" type="button">Sign up</button>
+						<button class="profile-tablet"></button>
 					</div>
 				</div>
 			</div>
@@ -76,7 +81,7 @@
 						<label class="sidebar__label">
 							<a href="zoos.html">
 								<input
-								class="visually-hidden sidebar__input"
+									class="visually-hidden sidebar__input"
 									type="radio"
 									checked
 									name="animals"
@@ -103,13 +108,7 @@
 									name="animals"
 								/>
 								<div class="sidebar__animal-wrapper">
-									<img
-									class="sidebar__avatar"
-									src="./img/eagle-sidebar.png"
-									width="70"
-									height="65"
-									alt="eagle"
-									/>
+									<img class="sidebar__avatar"	src="./img/eagle-sidebar.png"	width="70"	height="65"	alt="eagle"/>
 								</div>
 								Eagles
 							</a>
@@ -145,13 +144,7 @@
 									name="animals"
 								/>
 								<div class="sidebar__animal-wrapper">
-									<img
-									class="sidebar__avatar"
-									src="./img/alligator-sidebar.png"
-									width="70"
-									height="65"
-									alt="eagle"
-									/>
+									<img class="sidebar__avatar" src="./img/alligator-sidebar.png" width="70" height="65" alt="eagle"	/>
 								</div>
 								Aligators
 							</a>
@@ -198,16 +191,16 @@
 					</button>
 
 					<ul class="side-cameras__list">
-						<li class="side-cameras__item">
-							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<li class="side-cameras__item embed">
+							<iframe src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</li>
 
-						<li class="side-cameras__item">
-							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<li class="side-cameras__item embed">
+							<iframe src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</li>
 
-						<li class="side-cameras__item">
-							<iframe width="380" height="240" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<li class="side-cameras__item embed">
+							<iframe src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</li>
 					</ul>
 				</div>
@@ -272,11 +265,11 @@
 			</section>
 		</main>
 
-		<footer class="footer">
-			<div class="container footer__container">
+		<footer class="footer footer--zoos">
+			<div class="container container--zoos footer__container">
 				<div class="header__left">
 					<a class="header__logo" href="index.html">
-						<svg width="108" height="84">
+						<svg class="header__logo">
 							<use xlink:href="#icon-header-logo"></use>
 						</svg>
 					</a>
@@ -310,171 +303,6 @@
 				</div>
 			</div>
 		</footer>
-
-		<div class="modal modal--sign-up">
-			<div class="modal__content">
-				<div class="modal__content-header">
-					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
-				</div>
-
-				<div class="modal__content-main">
-					<form class="modal__form" action="/" method="POST">
-						<input class="visually-hidden modal__input-check-create" id="create" checked type="radio" name="registration">
-						<label class="modal__label-check" for="create">Create acccount</label>
-						<input class="visually-hidden modal__input-check-login" id="login" type="radio" name="registration">
-						<label class="modal__label-check" for="login">Log in</label>
-
-						<div class="modal__social-btns">
-							<button class="modal__social-btn" type="button">Google Sign in</button>
-							<button class="modal__social-btn" type="button">Facebook Sign in</button>
-						</div>
-
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required>
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required>
-						</label>
-						
-						<label class="modal__label">
-							password
-							<input class="modal__input" type="password" required>
-						</label>
-
-						<label class="modal__label-privacy">
-							<input class="modal__input-privacy" type="checkbox" required>
-							Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
-						</label>
-
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div>
-
-		<div class="modal modal--contact">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Contact us</h2>
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required>
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required>
-						</label>
-
-						<label class="modal__label">
-							Your Message
-							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
-						</label>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> 
-
-		<div class="modal modal--feedback">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Leave feedback</h2>
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Name
-							<input class="modal__input" type="name" required>
-						</label>
-
-						<label class="modal__label">
-							Email
-							<input class="modal__input" type="email" required>
-						</label>
-
-						<label class="modal__label">
-							Feedback
-							<textarea class="modal__input modal__input-textarea" type="text" required></textarea>
-						</label>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-				</div>
-			</div> 
-		</div> 
-
-		<div class="modal modal--feeding">
-			<div class="modal__content">
-
-				<div class="modal__content-main">
-					<h2 class="modal__content-title">Donate to volunteers</h2>
-					<p class="modal__content-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
-
-					<form class="modal__form" action="/" method="POST">
-						<label class="modal__label modal__label-name">
-							Choose an animal
-							<input class="modal__input" type="text" required>
-						</label>
-
-						<label class="modal__label modal__label-payments">Payments</label>
-						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked type="radio" name="registration">
-						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
-						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
-						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
-
-						<div class="modal__price">
-							<input class="visually-hidden modal__input-price" id="$3" checked type="radio" name="price">
-							<label class="modal__label-price" for="$3">$3</label>
-							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
-							<label class="modal__label-price" for="$5">$5</label>
-							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
-							<label class="modal__label-price" for="$10">$10</label>
-							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
-							<label class="modal__label-price" for="$25">$25</label>
-						</div>
-
-						<label class="modal__label">
-							Your name
-							<input class="modal__input" type="name" required>
-						</label>
-
-						<label class="modal__label">
-							Your Email
-							<input class="modal__input" type="email" required></input>
-						</label>
-
-						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
-						<div class="modal__content-payment">
-							<label class="modal__label modal__label--feeding">
-								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
-								<input class="modal__input modal__input--feeding" type="number" name="card_number" required placeholder="Card Number"></input>
-							</label>
-
-							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="number" required placeholder="MM / YY"></input>
-							</label>
-
-							<label class="modal__label modal__label--feeding">
-								<input class="modal__input modal__input--feeding" type="text" required placeholder="CVC"></input>
-							</label>
-						</div>
-						
-						<button class="modal__btn-send" type="submit">send</button>
-					</form>
-
-					<div class="modal__copyright">
-						<p>Your payment is protected</p>
-					</div>
-				</div>
-				
-			</div> 
-		</div>
 
 		<script src="./js/script.js"></script>
 	</body>

@@ -5,6 +5,8 @@
 
 	&--zoos {
 		max-width: 1345px;
+		padding: 0 10px;
+		margin: 0 auto;
 	}
 }
 
@@ -22,7 +24,7 @@
 	.container {
 		max-width: 620px;
 
-		&--zoos {	
+		&--zoos {
 			max-width: 550px;
 		}
 	}

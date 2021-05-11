@@ -7,7 +7,7 @@ var modalContent = document.querySelector(".modal__content");
 var contact = document.querySelector(".nav__btn-contact");
 var subBtn = document.querySelector("#nav__sub-btn");
 var modalContact = document.querySelector(".modal--contact");
-var borderBottom = document.querySelector(".nav__link-borderbottom");
+var borderBottom = document.querySelector(".nav__link-borderbottom");	
 var sub_borderBottom = document.querySelector("#borderBottom");
 
 var feedback = document.querySelector(".btn--testimonials");
@@ -102,8 +102,8 @@ modalContact.addEventListener("click", function (evt) {
 		contact.classList.remove('nav__btn-contact--active');
 		subBtn.classList.toggle('nav__btn-contact--active');
 		modalContact.classList.remove('modal--contact--active');
-		borderBottom.classList.toggle("nav__link-borderbottom")
-		sub_borderBottom.classList.toggle("nav__link-borderbottom")
+		borderBottom.classList.remove("nav__link-borderbottom");
+		sub_borderBottom.classList.toggle("nav__link-borderbottom");
 	}
 })
 

@@ -2,6 +2,10 @@
 	padding: 58px 0;
 	background: #196469;
 	box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
+
+	&--zoos .container--zoos {
+		max-width: 1600px;
+	}
 }
 .footer__container {
 	display: flex;
@@ -30,6 +34,10 @@
 @media screen and (max-width: $smallDesktop) {
 	.footer {
 		padding: 17px 0 20px;
+
+		&--zoos .container--zoos {
+			max-width: 1138px;
+		}
 	}
 
 	.footer__copyright {
@@ -45,6 +53,10 @@
 @media screen and (max-width: $tablet) {
 	.footer {
 		padding: 22px 0 18px;
+
+		&--zoos .container--zoos {
+			max-width: 592px;
+		}
 	}
 
 	.footer__copyright {
@@ -54,5 +66,11 @@
 		p {
 			margin-bottom: 4px;
 		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.footer--zoos .container--zoos {
+		max-width: 283px;
 	}
 }

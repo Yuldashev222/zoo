@@ -8,6 +8,10 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+
+	&--zoos .container--zoos {
+		max-width: 1600px;
+	}
 }
 
 .header__container {
@@ -32,12 +36,20 @@
 @media screen and (max-width: $smallDesktop) {
 	.header {
 		padding: 20px 30px;
+
+		&--zoos .container--zoos {
+			max-width: 1138px;
+		}
 	}
 }
 
 @media screen and (max-width: $tablet) {
 	.header {
 		padding: 20px 0;
+
+		&--zoos .container--zoos {
+			max-width: 592px;
+		}
 	}
 	.header__logo {
 		width: 49px;
@@ -48,6 +60,10 @@
 @media screen and (max-width: $mobile) {
 	.header {
 		padding: 7px 0 5px;
+
+		&--zoos .container--zoos {
+			max-width: 283px;
+		}
 	}
 	.header__logo {
 		width: 49px;

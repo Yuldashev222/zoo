@@ -47,31 +47,38 @@
 }
 
 @media screen and (min-width: $smallDesktop) {
-	.next__left--pets {
+	.next__left--pets,
+	.next__right--pets {
 		right: 0;
 	}
 
 	.next__right--pets {
-		right: 0;
+		top: 51%;
+	}
+
+	.next__left--pets {
+		top: 52%;
 	}
 }
 
 @media screen and (max-width: $smallDesktop) {
 	.next__left {
-		margin-top: 30px;
+		margin-top: 0;
 
 		&--pets {
 			position: absolute;
 
-			right: 60px;
-			top: 45%;
+			right: 53px;
+			top: 50%;
 		}
 	}
 
 	.next__right {
 		&--pets {
-			right: 60px;
-			top: 47%;
+			position: absolute;
+
+			right: 53px;
+			top: 49%;
 		}
 	}
 }
