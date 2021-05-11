@@ -154,9 +154,12 @@
 @media screen and (max-width: $mobile) {
 	main {
 		background-color: #2a8086;
-		padding: 70px 0 23px;
+		padding: 70px 0;
+		height: 100vh;
 	}
 	.map {
+		padding: 0;
+
 		background: url("../img/mobile-map.svg") no-repeat center center;
 		background-size: cover;
 		background-repeat: no-repeat;
