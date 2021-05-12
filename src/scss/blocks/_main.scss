@@ -1,6 +1,26 @@
-.main {
-	padding: 50px 0 440px $sidebar-width;
+.main--zoos {
+	padding: 50px 20px 440px calc(#{$sidebar-width} + 20px);
 
 	background: url("../img/work-steps-bg.png") no-repeat center bottom -150px;
-	background-size: contain;
+	background-size: cover 300px;
+}
+
+
+
+@media screen and (max-width: $tablet-zoos) {
+	.main--zoos {
+		padding: 50px 0 440px calc(#{$sidebar-width} - 50px);
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.main--zoos {
+		padding: 127px 0 440px;
+	}
+}
+
+@media screen and (max-width: $mobile-zoos) {
+	.main--zoos {
+		padding-top: 75px;
+	}
 }

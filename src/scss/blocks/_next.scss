@@ -25,8 +25,8 @@
 	&--side-cameras {
 		position: absolute;
 
-		right: 50px;
-		top: 45%;
+		right: 55px;
+		top: 55%;
 	}
 }
 
@@ -41,25 +41,25 @@
 	&--side-cameras {
 		position: absolute;
 
-		right: 50px;
-		top: 35%;
+		right: 55px;
+		top: 38%;
 	}
 }
 
-@media screen and (min-width: $smallDesktop) {
-	.next__left--pets,
-	.next__right--pets {
-		right: 0;
-	}
+// @media screen and (min-width: $smallDesktop) {
+// 	.next__left--pets,
+// 	.next__right--pets {
+// 		right: 0;
+// 	}
 
-	.next__right--pets {
-		top: 51%;
-	}
+// 	.next__right--pets {
+// 		top: 51%;
+// 	}
 
-	.next__left--pets {
-		top: 52%;
-	}
-}
+// 	.next__left--pets {
+// 		top: 52%;
+// 	}
+// }
 
 @media screen and (max-width: $smallDesktop) {
 	.next__left {
@@ -71,6 +71,10 @@
 			right: 53px;
 			top: 50%;
 		}
+
+		&--side-cameras {
+			right: 25px;
+		}
 	}
 
 	.next__right {
@@ -79,6 +83,10 @@
 
 			right: 53px;
 			top: 49%;
+		}
+
+		&--side-cameras {
+			right: 25px;
 		}
 	}
 }
@@ -90,6 +98,11 @@
 			top: 49%;
 			transform: translateY(-50%) rotate(180deg);
 		}
+
+		&--side-cameras {
+			top: 60%;
+			right: 10px;
+		}
 	}
 
 	.next__right {
@@ -97,6 +110,27 @@
 			right: 30px;
 			top: 46%;
 			transform: translateY(-50%);
+		}
+
+		&--side-cameras {
+			right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet-zoos) {
+	.next__left {
+
+		&--side-cameras {
+			top: 60%;
+			right: 0;
+		}
+	}
+
+	.next__right {
+
+		&--side-cameras {
+			right: 0;
 		}
 	}
 }
@@ -130,5 +164,16 @@
 		.next__right {
 			transform: rotate(90deg);
 		}
+	}
+}
+
+@media screen and (max-width: $mobile-zoos) {
+	.next__left--side-cameras {
+		display: none;
+	}
+
+	.next__right--side-cameras {
+		right: 13px;
+		top: 50%;
 	}
 }

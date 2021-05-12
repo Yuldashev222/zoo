@@ -3,6 +3,9 @@
 
 	background-color: #2a8086;
 }
+.map-main {
+	background-color: #2a8086;
+}
 .map__title {
 	margin-bottom: 54px;
 
@@ -99,6 +102,7 @@
 @media screen and (max-width: $tablet) {
 	.map {
 		padding: 30px 0 18px;
+		height: calc(100vh - 156px);
 	}
 	.map__title {
 		margin-bottom: 46px;
@@ -152,21 +156,19 @@
 }
 
 @media screen and (max-width: $mobile) {
-	main {
-		background-color: #2a8086;
-		padding: 70px 0;
-		height: 100vh;
-	}
 	.map {
 		padding: 0;
 
 		background: url("../img/mobile-map.svg") no-repeat center center;
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
-		background-position: left -70px center;
+		background-position: center top 70px;
 		position: relative;
-		overflow-x: scroll;
+		overflow: scroll;
 		background-attachment: local;
+
+		padding: 70px 0 23px;
+		height: calc(100vh - 128px);
 
 		.container {
 			min-width: 710px;

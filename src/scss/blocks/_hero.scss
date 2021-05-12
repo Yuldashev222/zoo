@@ -79,9 +79,9 @@
 @media screen and (max-width: $tablet) {
 	.hero {
 		padding: 30px 0 150px;
-		background: url("../img/zzzz.png") no-repeat;
-		background-position: center center;
-		background-size: cover;
+		background: url("../img/tablet-hero-bg.png") no-repeat;
+		background-position: left -100px top -263px;
+		background-size: 1333px contain;
 	}
 	.hero__container {
 		align-items: center;

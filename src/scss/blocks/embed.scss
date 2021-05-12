@@ -17,6 +17,18 @@
 		padding-top: 56.25%;
 	}
 
+	&--main-cameras {
+		left: 0;
+		top: 0;
+		transform: none;
+		display: block;
+		width: 100%;
+		height: 604px;
+
+		background: rgba(0, 0, 0, 0.25);
+		border-radius: 19.5469px;
+	}
+
 	iframe,
 	video,
 	object,
@@ -31,14 +43,9 @@
 	}
 }
 
-@media screen and (min-width: $smallDesktop) {
-	.embed {
-	}
-}
-
 @media screen and (max-width: $smallDesktop) {
 	.embed {
-		width: 560px;
+		width: 100%;
 		height: 493px;
 	}
 }
@@ -48,6 +55,18 @@
 		width: 257px;
 		height: 222px;
 	}
+
+	.embed--main-cameras {
+		width: 100%;
+		height: 531px;
+	}
+}
+
+@media screen and (max-width: $tablet-zoos) {
+	.embed--main-cameras {
+		width: 100%;
+		height: 315px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
@@ -56,5 +75,21 @@
 
 		width: 300px;
 		height: 235px;
+
+		&--main-cameras {
+			left: 0;
+			width: 100%;
+			height: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.embed {
+		&--main-cameras {
+			left: 0;
+			width: 100%;
+			height: 178px;
+		}
 	}
 }

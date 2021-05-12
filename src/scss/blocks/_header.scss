@@ -1,4 +1,5 @@
-.header {
+.header,
+.header--zoos {
 	padding: 13px 0;
 	background: #2a8086;
 	box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
@@ -8,9 +9,11 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+}
 
-	&--zoos .container--zoos {
-		max-width: 1600px;
+.header--zoos {
+	.container {
+		max-width: 1630px;
 	}
 }
 
@@ -36,9 +39,15 @@
 @media screen and (max-width: $smallDesktop) {
 	.header {
 		padding: 20px 30px;
+	}
+}
 
-		&--zoos .container--zoos {
-			max-width: 1138px;
+@media screen and (max-width: $smallDesktop-zoos) {
+	.header--zoos {
+		padding: 20px 30px;
+
+		.container {
+			max-width: 1158px;
 		}
 	}
 }
@@ -46,9 +55,29 @@
 @media screen and (max-width: $tablet) {
 	.header {
 		padding: 20px 0;
+	}
+	.header__logo {
+		width: 49px;
+		height: 38px;
+	}
+}
 
-		&--zoos .container--zoos {
+@media screen and (max-width: $tablet-zoos) {
+	.header--zoos {
+		padding: 20px 0;
+
+		.container {
 			max-width: 592px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.header {
+		padding: 7px 0 5px;
+
+		&--zoos {
+			padding: 7px 0 5px;
 		}
 	}
 	.header__logo {
@@ -57,16 +86,16 @@
 	}
 }
 
-@media screen and (max-width: $mobile) {
-	.header {
+
+
+
+
+@media screen and (max-width: $mobile-zoos) {
+	.header--zoos {
 		padding: 7px 0 5px;
 
-		&--zoos .container--zoos {
-			max-width: 283px;
+		.container {
+			max-width: 320px;
 		}
-	}
-	.header__logo {
-		width: 49px;
-		height: 38px;
 	}
 }

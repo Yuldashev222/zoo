@@ -1,4 +1,5 @@
-.sidebar {
+.sidebar,
+.sidebar-mobile {
 	position: fixed;
 	left: 0;
 	top: 110px;
@@ -62,8 +63,157 @@
 
 	padding: 15px 14px 7px 15px;
 	height: 96px;
+
+	img {
+		width: 70px;
+		height: 65px;
+	}
 }
 .sidebar__input:checked + .sidebar__animal-wrapper {
 	background: url("../img/wrapper-avatar.png") no-repeat center center;
 	background-size: cover;
 }
+
+.sidebar__animal-dropdown-list {
+	display: none;
+	width: 100%;
+
+	position: absolute;
+	left: 0;
+	top: calc(100% + 7px);
+
+	background: #488d92;
+}
+
+.sidebar__animal-dropdown-list--active {
+	display: block;
+}
+
+.sidebar__animal-dropdown-item {
+	display: block;
+
+	transition: all 0.1s linear;
+
+	&:hover {
+		box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
+	}
+
+	a {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.sidebar,
+	.sidebar-mobile {
+		width: 90px;
+		top: 78px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.sidebar {
+		display: none;
+	}
+	.sidebar-mobile {
+		display: block;
+		left: 0;
+		top: 50px;
+		height: 60px;
+
+		width: 100%;
+
+		background: #488d92;
+		box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
+
+		border-radius: 0;
+		z-index: 2;
+
+		&::after {
+			content: "";
+			right: 50px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 22px;
+			height: 22px;
+			display: block;
+
+			position: absolute;
+
+			background: url("../img/icon-triangle-bottom.svg") no-repeat center center;
+			background-size: contain;
+		}
+
+		&--active {
+			&::after {
+				transform: rotate(180deg) translateY(50%);
+			}
+		}
+	}
+	.sidebar__content {
+		width: 100%;
+
+		margin-top: 0;
+
+		position: absolute;
+		right: unset;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.sidebar__animals {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.sidebar__animal {
+		// width: 100%;
+		margin-bottom: 0;
+
+		&:not(:first-child) {
+			display: none;
+		}
+	}
+	.sidebar__label {
+		width: 100%;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+
+		font-family: "roboto";
+		font-weight: 400;
+		letter-spacing: 1px;
+		font-size: 15px;
+		line-height: 14px;
+
+		text-transform: unset;
+
+		color: #f3f7f8;
+	}
+
+	.sidebar__animal-wrapper {
+		margin: 0 20px;
+
+		padding: 0;
+		height: unset;
+
+		img {
+			width: 41px;
+			height: 40px;
+		}
+	}
+	.sidebar__input:checked + .sidebar__animal-wrapper {
+		background: none;
+	}
+}
+
+// @media screen and (max-width: $mobile-zoos) {
+// 	.sidebar-mobile::after {
+// 		right: 100px;
+// 	}
+// 	.sidebar__content {
+// 		left: 45px;
+// 	}
+// }

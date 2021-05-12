@@ -61,3 +61,62 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet-zoos) {
+	.main-zoos {
+		padding: 20px 0 350px 140px;
+		background: url("../img/tablet-zoos-bg.png") no-repeat left -100px bottom -55px;
+		background-size: cover 312px;
+	}
+
+	.about__container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: $mobile-zoos) {
+	.about__title {
+		margin-bottom: 20px;
+
+		line-height: 21px;
+	}
+	.about__item {
+		margin-bottom: 30px;
+	}
+
+	.about__item-title {
+		margin-bottom: 2px;
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: $Green;
+	}
+	.about__item-desc {
+		font-size: 12px;
+	}
+	.about__facts {
+		.about__list {
+			padding-left: 25px;
+			max-width: 300px;
+		}
+
+		.about__item {
+			position: relative;
+			margin-bottom: 20px;
+			&::before {
+				content: "";
+				left: -22px;
+				top: 0;
+				width: 12px;
+				height: 16px;
+				display: block;
+
+				position: absolute;
+
+				background: url("../img/icon-feather.svg") no-repeat center center;
+				background-size: contain;
+			}
+		}
+	}
+}

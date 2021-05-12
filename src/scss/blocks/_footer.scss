@@ -3,8 +3,8 @@
 	background: #196469;
 	box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
 
-	&--zoos .container--zoos {
-		max-width: 1600px;
+	&--zoos .container {
+		max-width: 1630px;
 	}
 }
 .footer__container {
@@ -35,8 +35,8 @@
 	.footer {
 		padding: 17px 0 20px;
 
-		&--zoos .container--zoos {
-			max-width: 1138px;
+		&--zoos .container {
+			max-width: 1158px;
 		}
 	}
 
@@ -54,7 +54,7 @@
 	.footer {
 		padding: 22px 0 18px;
 
-		&--zoos .container--zoos {
+		&--zoos .container {
 			max-width: 592px;
 		}
 	}
@@ -70,7 +70,12 @@
 }
 
 @media screen and (max-width: $mobile) {
-	.footer--zoos .container--zoos {
-		max-width: 283px;
+	.footer {
+		
+		&--zoos {
+			.container {
+				max-width: 320px;
+			}
+		}
 	}
 }

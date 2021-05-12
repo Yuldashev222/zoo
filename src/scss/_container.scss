@@ -13,27 +13,39 @@
 @media screen and (max-width: $smallDesktop) {
 	.container {
 		max-width: 1158px;
-
-		&--zoos {
-			max-width: 1028px;
-		}
 	}
 }
 
 @media screen and (max-width: $tablet) {
 	.container {
 		max-width: 620px;
-
-		&--zoos {
-			max-width: 550px;
-		}
 	}
 }
 
 @media screen and (max-width: $mobile) {
 	.container {
 		max-width: 320px;
+	}
+}
 
+@media screen and (max-width: $smallDesktop-zoos) {
+	.container {
+		&--zoos {
+			max-width: 1028px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet-zoos) {
+	.container {
+		&--zoos {
+			max-width: 550px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-zoos) {
+	.container {
 		&--zoos {
 			max-width: 320px;
 		}
