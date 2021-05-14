@@ -51,6 +51,7 @@ contact.addEventListener("click", function () {
 	modalContact.classList.toggle('modal--contact--active');
 	borderBottom.classList.toggle("nav__link-borderbottom");
 	sub_borderBottom.classList.toggle("nav__link-borderbottom");
+	nav.classList.toggle("nav--active");
 })
 
 subBtn.addEventListener("click", function () {
@@ -75,6 +76,14 @@ login.addEventListener("click", function () {
 	borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
+	modallogin.addEventListener("click", function (evt) {
+		if(evt.target.classList.contains('modal--log-in')){
+			modallogin.classList.remove('modal--log-in--active');
+			login.classList.toggle('profile__log-in--active');
+			borderBottom.classList.toggle("nav__link-borderbottom");
+		}
+	})
+
 modalContact.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--contact')){
 		contact.classList.remove('nav__btn-contact--active');
@@ -91,10 +100,28 @@ modalSignUp.addEventListener("click", function (evt) {
 	}
 })
 
-var sidebar = document.querySelector(".sidebar-mobile");
+var sidebar = document.querySelector(".sidebar");
 var dropdown = document.querySelector(".sidebar__animal-dropdown-list");
 
-sidebar.addEventListener("click", function () {
+// sidebar.addEventListener("click", function () {
+	// dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
+	// sidebar.classList.toggle('sidebar-mobile--active');
+// })
+
+sidebar.addEventListener('click', function (evt) {
+	if(evt.currentTarget.classList.contains('sidebar')){
 	dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
 	sidebar.classList.toggle('sidebar-mobile--active');
+	}
 })
+
+feeding.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
+
+modalFeeding.addEventListener("click", function (evt) {
+	if(evt.target.classList.contains('modal--feeding')){
+		modalFeeding.classList.remove('modal--feeding--active');
+	}
+})
+

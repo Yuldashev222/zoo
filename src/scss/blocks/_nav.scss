@@ -22,11 +22,6 @@
 
 	color: $LightGreen;
 	transition: 0.2s linear;
-
-	&:hover {
-		// opacity: 0.8;
-		// border-bottom: 2px solid $LightGreen;
-	}
 }
 
 .nav--active {
@@ -72,7 +67,7 @@
 
 		position: absolute;
 		left: 0;
-		top: 100%;
+		top: 99%;
 		width: 100%;
 		height: 100vh;
 

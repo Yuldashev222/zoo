@@ -1,11 +1,11 @@
 .main--zoos {
 	padding: 50px 20px 440px calc(#{$sidebar-width} + 20px);
 
-	background: url("../img/work-steps-bg.png") no-repeat center bottom -150px;
+	background: url("../img/zoos-bg.png") no-repeat center bottom -100px;
 	background-size: cover 300px;
+
+	position: relative;
 }
-
-
 
 @media screen and (max-width: $tablet-zoos) {
 	.main--zoos {

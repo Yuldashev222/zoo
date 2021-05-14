@@ -146,9 +146,6 @@
 <path d="M1 26H267.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 </symbol><symbol id="icon-triangle-bottom" viewBox="0 0 22 22">
 <path d="M5.5 8.25L11 13.75L16.5 8.25L5.5 8.25Z" stroke="#C5E1E6" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"></path>
-</symbol><symbol id="icon-white-arrow" viewBox="0 0 17 24">
-<path d="M6.5 1.5L15.8527 11.6009C16.2151 11.9923 16.2065 12.5994 15.833 12.9804L6.5 22.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
-<path d="M1.5 1.5L10.8527 11.6009C11.2151 11.9923 11.2065 12.5994 10.833 12.9804L1.5 22.5" stroke="#C5E1E6" stroke-width="1.5" stroke-linecap="round"></path>
 </symbol></svg>
 		</div>
 		<h1 class="visually-hidden">Zoo site</h1>
@@ -227,34 +224,34 @@
 						<ul class="sidebar__animal-dropdown-list">
 							<li class="sidebar__animal-dropdown-item">
 								<label class="sidebar__label">
-									<a href="zoos.html">
+									<a href="eagles.html">
 										<input class="visually-hidden sidebar__input" checked="" type="radio" name="animals">
 										<div class="sidebar__animal-wrapper">
-											<img class="sidebar__avatar" src="./img/mobile-panda-sidebar.png" alt="eagle">
+											<img class="sidebar__avatar" src="./img/mobile-eagle-sidebar.png" alt="eagle">
 										</div>
-										Pandas
+										Eagles
 									</a>
 								</label>
 							</li>
 							<li class="sidebar__animal-dropdown-item">
 								<label class="sidebar__label">
-									<a href="zoos.html">
+									<a href="gorillas.html">
 										<input class="visually-hidden sidebar__input" checked="" type="radio" name="animals">
 										<div class="sidebar__animal-wrapper">
-											<img class="sidebar__avatar" src="./img/mobile-panda-sidebar.png" alt="eagle">
+											<img class="sidebar__avatar" src="./img/mobile-gorilla-sidebar.png" alt="eagle">
 										</div>
-										Pandas
+										Gorillas
 									</a>
 								</label>
 							</li>
 							<li class="sidebar__animal-dropdown-item">
 								<label class="sidebar__label">
-									<a href="zoos.html">
+									<a href="alligators.html">
 										<input class="visually-hidden sidebar__input" checked="" type="radio" name="animals">
 										<div class="sidebar__animal-wrapper">
-											<img class="sidebar__avatar" src="./img/mobile-panda-sidebar.png" alt="eagle">
+											<img class="sidebar__avatar" src="./img/mobile-alligator-sidebar.png" alt="eagle">
 										</div>
-										Pandas
+										alligators
 									</a>
 								</label>
 							</li>
@@ -410,6 +407,9 @@
 						</ul>
 					</div>
 				</div>
+				<button class="btn btn--feeding" id="feeding" type="button">
+					Donate to volunteers
+				</button>
 			</section>
 		</main>
 
@@ -509,6 +509,55 @@
 			</div>
 		</div>
 
+		<div class="modal modal--log-in">
+			<div class="modal__content">
+				<div class="modal__content-header">
+					<img class="modal__logo" width="78" height="61" src="./img/icon-header-logo.svg" alt="logo">
+				</div>
+
+				<div class="modal__content-main">
+					<form class="modal__form" action="/" method="POST">
+						<input class="visually-hidden modal__input-check-login" id="login2" checked="" type="radio" name="registration">
+						<label class="modal__label-check" for="login2">Log in</label>
+						<input class="visually-hidden modal__input-check-create" id="create2" type="radio" name="registration">
+						<label class="modal__label-check" for="create2">Create acccount</label>
+
+						<div class="modal__social-btns">
+							<button class="modal__social-btn" type="button">
+								Google Log in
+							</button>
+							<button class="modal__social-btn" type="button">
+								Facebook Log in
+							</button>
+						</div>
+
+						<label class="modal__label modal__label-name">
+							Name
+							<input class="modal__input" type="text" name="name" required="">
+						</label>
+
+						<label class="modal__label">
+							Email
+							<input class="modal__input" type="email" required="">
+						</label>
+
+						<label class="modal__label">
+							password
+							<input class="modal__input" type="password" required="">
+						</label>
+
+						<label class="modal__label-privacy">
+							<input class="modal__input-privacy" type="checkbox" required="">
+							Agree with the <a href="#">User Agreement</a> and
+							<a href="#">Privacy Policy</a>
+						</label>
+
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<div class="modal modal--contact modal-zoos">
 			<div class="modal__content">
 				<div class="modal__content-main">
@@ -531,6 +580,74 @@
 
 						<button class="modal__btn-send" type="submit">send</button>
 					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal--feeding">
+			<div class="modal__content">
+				<div class="modal__content-main">
+					<h2 class="modal__content-title">Donate to volunteers</h2>
+					<p class="modal__content-text">
+						Support your favourite animals. It is as simple as buying a cup of
+						coffee.
+					</p>
+
+					<form class="modal__form" action="/" method="POST">
+						<label class="modal__label modal__label-name">
+							Choose an animal
+							<input class="modal__input" type="text" required="">
+						</label>
+
+						<label class="modal__label modal__label-payments">Payments</label>
+						<input class="visually-hidden modal__input-check-create" id="create-feeding" checked="" type="radio" name="registration">
+						<label class="modal__label-check--feeding modal__label-create-check--feeding" for="create-feeding">Monthly</label>
+						<input class="visually-hidden modal__input-check-login" id="login-feeding" type="radio" name="registration">
+						<label class="modal__label-check--feeding" for="login-feeding">One-time</label>
+
+						<div class="modal__price">
+							<input class="visually-hidden modal__input-price" id="$3" checked="" type="radio" name="price">
+							<label class="modal__label-price" for="$3">$3</label>
+							<input class="visually-hidden modal__input-price" id="$5" type="radio" name="price">
+							<label class="modal__label-price" for="$5">$5</label>
+							<input class="visually-hidden modal__input-price" id="$10" type="radio" name="price">
+							<label class="modal__label-price" for="$10">$10</label>
+							<input class="visually-hidden modal__input-price" id="$25" type="radio" name="price">
+							<label class="modal__label-price" for="$25">$25</label>
+						</div>
+
+						<label class="modal__label">
+							Your name
+							<input class="modal__input" type="text" name="name" required="">
+						</label>
+
+						<label class="modal__label">
+							Your Email
+							<input class="modal__input" type="email" required="">
+						</label>
+
+						<img class="modal__content-payment-img" src="./img/icon-payment-methods.svg" alt="payment methods">
+						<div class="modal__content-payment">
+							<label class="modal__label modal__label--feeding">
+								<img src="./img/icon-card.svg" width="24" height="24" alt="card">
+								<input class="modal__input modal__input--feeding" type="number" name="card_number" required="" placeholder="Card Number">
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="number" required="" placeholder="MM / YY">
+							</label>
+
+							<label class="modal__label modal__label--feeding">
+								<input class="modal__input modal__input--feeding" type="text" required="" placeholder="CVC">
+							</label>
+						</div>
+
+						<button class="modal__btn-send" type="submit">send</button>
+					</form>
+
+					<div class="modal__copyright">
+						<p>Your payment is protected</p>
+					</div>
 				</div>
 			</div>
 		</div>

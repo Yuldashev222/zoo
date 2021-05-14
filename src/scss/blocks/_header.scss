@@ -77,25 +77,26 @@
 		padding: 7px 0 5px;
 
 		&--zoos {
-			padding: 7px 0 5px;
+			padding: 7px 10px 5px;
 		}
 	}
 	.header__logo {
 		width: 49px;
 		height: 38px;
 	}
+
+	.header__right {
+		display: block;
+	}
 }
 
 @media screen and (max-width: $mobile-zoos) {
 	.header--zoos {
-		padding: 7px 0 5px;
-
-		.container {
-			max-width: 320px;
-		}
+		padding: 7px 10px 5px;
 
 		.header__right {
 			display: block;
+			margin-right: 22px;
 		}
 	}
 }

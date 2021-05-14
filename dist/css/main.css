@@ -495,18 +495,19 @@ template {
   .header {
     padding: 7px 0 5px; }
     .header--zoos {
-      padding: 7px 0 5px; }
+      padding: 7px 10px 5px; }
   .header__logo {
     width: 49px;
-    height: 38px; } }
+    height: 38px; }
+  .header__right {
+    display: block; } }
 
 @media screen and (max-width: 550px) {
   .header--zoos {
-    padding: 7px 0 5px; }
-    .header--zoos .container {
-      max-width: 320px; }
+    padding: 7px 10px 5px; }
     .header--zoos .header__right {
-      display: block; } }
+      display: block;
+      margin-right: 22px; } }
 
 .nav__list {
   display: flex;
@@ -565,7 +566,7 @@ template {
     display: block;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 99%;
     width: 100%;
     height: 100vh;
     background: #2a8086;
@@ -883,7 +884,7 @@ template {
     justify-content: unset;
     flex-direction: column-reverse; }
   .hero__content {
-    margin-top: 16px;
+    margin-top: 30px;
     width: 100%;
     color: #f3f7f8; }
   .hero__headline {
@@ -927,6 +928,7 @@ template {
   .embed embed {
     width: 100%;
     height: 100%;
+    border-style: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -960,7 +962,7 @@ template {
       width: 100%;
       height: 200px; } }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 550px) {
   .embed--main-cameras {
     left: 0;
     width: 100%;
@@ -1961,7 +1963,8 @@ template {
 .modal--feedback--active,
 .modal--feeding--active,
 .modal--log-in--active {
-  display: flex; }
+  display: flex;
+  z-index: 1; }
 
 .modal--feeding {
   z-index: 4;
@@ -2030,7 +2033,7 @@ template {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 17px 59px 17px 54px;
+  padding: 17px 58px 17px 54px;
   background: #fff;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
@@ -2402,7 +2405,8 @@ input[type="number"] {
   width: 140px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 20px; }
+  border-radius: 0 0 20px;
+  z-index: 1; }
 
 .sidebar__content {
   margin-top: 20px;
@@ -2457,7 +2461,7 @@ input[type="number"] {
   width: 100%;
   position: absolute;
   left: 0;
-  top: calc(100% + 7px);
+  top: calc(100% + 6px);
   background: #488d92; }
 
 .sidebar__animal-dropdown-list--active {
@@ -2465,9 +2469,13 @@ input[type="number"] {
 
 .sidebar__animal-dropdown-item {
   display: block;
+  padding: 7px 0;
+  border-bottom: 1px solid #6a9c9f;
   transition: all 0.1s linear; }
   .sidebar__animal-dropdown-item:hover {
     box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25); }
+  .sidebar__animal-dropdown-item:last-child {
+    margin-bottom: 3px; }
   .sidebar__animal-dropdown-item a {
     width: 100%;
     display: flex;
@@ -2485,11 +2493,10 @@ input[type="number"] {
   .sidebar-mobile {
     display: block;
     left: 0;
-    top: 50px;
+    top: 49px;
     height: 60px;
     width: 100%;
     background: #488d92;
-    box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
     border-radius: 0;
     z-index: 2; }
     .sidebar-mobile::after {
@@ -2505,6 +2512,10 @@ input[type="number"] {
       background-size: contain; }
     .sidebar-mobile--active::after {
       transform: rotate(180deg) translateY(50%); }
+    .sidebar-mobile--active .sidebar__animal-dropdown-item:first-child {
+      box-shadow: 0px 6px 10px inset rgba(18, 87, 91, 0.25); }
+      .sidebar-mobile--active .sidebar__animal-dropdown-item:first-child:hover {
+        box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25); }
   .sidebar__content {
     width: 100%;
     margin-top: 0;
@@ -2545,8 +2556,9 @@ input[type="number"] {
 
 .main--zoos {
   padding: 50px 20px 440px calc(140px + 20px);
-  background: url("../img/work-steps-bg.png") no-repeat center bottom -150px;
-  background-size: cover 300px; }
+  background: url("../img/zoos-bg.png") no-repeat center bottom -100px;
+  background-size: cover 300px;
+  position: relative; }
 
 @media screen and (max-width: 1028px) {
   .main--zoos {
@@ -2832,6 +2844,12 @@ input[type="number"] {
     background: url("../img/icon-feather.svg") no-repeat center center;
     background-size: contain; }
 
+.about .btn--feeding {
+  position: absolute;
+  left: 50%;
+  bottom: 68px;
+  transform: translateX(-50%); }
+
 @media screen and (max-width: 1028px) {
   .main-zoos {
     padding: 20px 0 350px 140px;
@@ -2839,6 +2857,10 @@ input[type="number"] {
     background-size: cover 312px; }
   .about__container {
     flex-direction: column; } }
+
+@media screen and (max-width: 620px) {
+  .about .btn--feeding {
+    display: block; } }
 
 @media screen and (max-width: 550px) {
   .about__title {
@@ -2990,7 +3012,7 @@ input[type="number"] {
     position: relative;
     overflow: scroll;
     background-attachment: local;
-    padding: 70px 0 23px;
+    padding: 70px 0 0;
     height: calc(100vh - 128px); }
     .map .container {
       min-width: 710px; }

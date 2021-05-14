@@ -44,10 +44,10 @@ function closeVideo(evt) {
 		playBtn.classList.remove('play-btn--active');
 	}
 }
-// playBtn.addEventListener("click", () => {
-// 	playBtn.classList.toggle('play-btn--active');
-// 	wrapper.addEventListener("click", closeVideo);
-// });
+playBtn.addEventListener("click", () => {
+	playBtn.classList.toggle('play-btn--active');
+	wrapper.addEventListener("click", closeVideo);
+});
 
 contact.addEventListener("click", function () {
 	contact.classList.toggle('nav__btn-contact--active');
@@ -55,6 +55,7 @@ contact.addEventListener("click", function () {
 	modalContact.classList.toggle('modal--contact--active');
 	borderBottom.classList.toggle("nav__link-borderbottom");
 	sub_borderBottom.classList.toggle("nav__link-borderbottom");
+	nav.classList.toggle("nav--active");
 })
 
 subBtn.addEventListener("click", function () {

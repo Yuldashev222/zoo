@@ -11,6 +11,7 @@
 	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
 
 	border-radius: 0 0 20px;
+	z-index: 1;
 }
 .sidebar__content {
 	margin-top: 20px;
@@ -80,7 +81,7 @@
 
 	position: absolute;
 	left: 0;
-	top: calc(100% + 7px);
+	top: calc(100% + 6px);
 
 	background: #488d92;
 }
@@ -92,10 +93,17 @@
 .sidebar__animal-dropdown-item {
 	display: block;
 
+	padding: 7px 0;
+	border-bottom: 1px solid #6a9c9f;
+
 	transition: all 0.1s linear;
 
 	&:hover {
 		box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
+	}
+
+	&:last-child {
+		margin-bottom: 3px;
 	}
 
 	a {
@@ -120,13 +128,12 @@
 	.sidebar-mobile {
 		display: block;
 		left: 0;
-		top: 50px;
+		top: 49px;
 		height: 60px;
 
 		width: 100%;
 
 		background: #488d92;
-		box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
 
 		border-radius: 0;
 		z-index: 2;
@@ -149,6 +156,14 @@
 		&--active {
 			&::after {
 				transform: rotate(180deg) translateY(50%);
+			}
+
+			.sidebar__animal-dropdown-item:first-child {
+				box-shadow: 0px 6px 10px inset rgba(18, 87, 91, 0.25);
+
+				&:hover {
+					box-shadow: 0px 1px 10px rgba(18, 87, 91, 0.25);
+				}
 			}
 		}
 	}
