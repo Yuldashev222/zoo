@@ -31,6 +31,8 @@ var hamburger = document.querySelector(".hamburger-button");
 var nav = document.querySelector(".nav");
 var body = document.querySelector(".body");
 
+var mobileAccount = document.querySelector(".nav__btn-account");
+
 hamburger.addEventListener("click", function () {
 	hamburger.classList.toggle("hamburger-button--active");
 	nav.classList.toggle("nav--active");
@@ -63,31 +65,35 @@ subBtn.addEventListener("click", function () {
 	sub_borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
-// feedback.addEventListener("click", function () {
-// 	modalFeedback.classList.toggle('modal--feedback--active');
-// })
+feedback.addEventListener("click", function () {
+	modalFeedback.classList.toggle('modal--feedback--active');
+})
 
-// feeding.addEventListener("click", function () {
-// 	modalFeeding.classList.toggle('modal--feeding--active');
-// })
+feeding.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
 
-// feedingAbove.addEventListener("click", function () {
-// 	modalFeeding.classList.toggle('modal--feeding--active');
-// })
+feedingAbove.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
 
-// feedbackAbove.addEventListener("click", function () {
-// 	modalFeedback.classList.toggle('modal--feeding--active');
-// })
+feedbackAbove.addEventListener("click", function () {
+	modalFeedback.classList.toggle('modal--feeding--active');
+})
 
-// btnLower.addEventListener("click", function () {
-// 	modalFeeding.classList.toggle('modal--feeding--active');
-// })
+btnLower.addEventListener("click", function () {
+	modalFeeding.classList.toggle('modal--feeding--active');
+})
 
 signUp.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
 profile.addEventListener("click", function () {
+	modalSignUp.classList.toggle('modal--sign-up--active');
+})
+
+mobileAccount.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
@@ -107,33 +113,23 @@ modalContact.addEventListener("click", function (evt) {
 	}
 })
 
-modalContact.addEventListener("click", function (evt) {
-	if(evt.target.classList.contains('modal--contact')){
-		contact.classList.remove('nav__btn-contact--active');
-		subBtn.classList.toggle('nav__btn-contact--active');
-		modalContact.classList.remove('modal--contact--active');
-		borderBottom.classList.toggle("nav__link-borderbottom")
-		sub_borderBottom.classList.toggle("nav__link-borderbottom")
-	}
-})
-
 modalSignUp.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--sign-up')){
 		modalSignUp.classList.remove('modal--sign-up--active');
 	}
 })
 
-modallogin.addEventListener("click", function (evt) {
-	if(evt.target.classList.contains('modal--log-in')){
-		modallogin.classList.remove('modal--log-in--active');
-		login.classList.toggle('profile__log-in--active');
-		borderBottom.classList.toggle("nav__link-borderbottom");
-	}
-})
+	modallogin.addEventListener("click", function (evt) {
+		if(evt.target.classList.contains('modal--log-in')){
+			modallogin.classList.remove('modal--log-in--active');
+			login.classList.toggle('profile__log-in--active');
+			borderBottom.classList.toggle("nav__link-borderbottom");
+		}
+	})
 
 modalFeedback.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--feedback')){
-		modalFeedback.classList.remove('modal--feedback--active');
+		modalFeedback.classList.remove('modal--feeding--active');
 	}
 })
 
@@ -146,7 +142,7 @@ modalFeeding.addEventListener("click", function (evt) {
 var sidebar = document.querySelector(".sidebar-mobile");
 var dropdown = document.querySelector(".sidebar__animal-dropdown-list");
 
-sidebar.addEventListener("click", function () {
-	dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
-	sidebar.classList.toggle('sidebar-mobile--active');
-})
+// sidebar.addEventListener("click", function () {
+// 	dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
+// 	sidebar.classList.toggle('sidebar-mobile--active');
+// })

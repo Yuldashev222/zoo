@@ -504,7 +504,9 @@ template {
   .header--zoos {
     padding: 7px 0 5px; }
     .header--zoos .container {
-      max-width: 320px; } }
+      max-width: 320px; }
+    .header--zoos .header__right {
+      display: block; } }
 
 .nav__list {
   display: flex;
@@ -683,8 +685,6 @@ template {
 .profile__log-in {
   padding-bottom: 2px;
   border-bottom: 2px solid transparent; }
-  .profile__log-in:hover {
-    border-bottom: 2px solid #c5e1e6; }
   .profile__log-in--active {
     border-bottom: 2px solid #c5e1e6; }
 
@@ -1776,7 +1776,7 @@ template {
   transform: rotate(180deg); }
   .next__left--pets {
     position: absolute;
-    right: -50px;
+    right: 0;
     top: 49%;
     transform: translateY(150%) rotate(180deg); }
   .next__left--side-cameras {
@@ -1786,7 +1786,7 @@ template {
 
 .next__right--pets {
   position: absolute;
-  right: -50px;
+  right: 0;
   top: 48%; }
 
 .next__right--side-cameras {
@@ -1813,14 +1813,14 @@ template {
 @media screen and (max-width: 1158px) {
   .next__left--pets {
     right: 30px;
-    top: 49%;
+    top: 56%;
     transform: translateY(-50%) rotate(180deg); }
   .next__left--side-cameras {
     top: 60%;
     right: 10px; }
   .next__right--pets {
     right: 30px;
-    top: 46%;
+    top: 49%;
     transform: translateY(-50%); }
   .next__right--side-cameras {
     right: 10px; } }
@@ -1953,6 +1953,8 @@ template {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   justify-content: center; }
+  .modal-zoos {
+    z-index: 1; }
 
 .modal--contact--active,
 .modal--sign-up--active,
@@ -2275,7 +2277,8 @@ template {
     background: url("../img/icon-lock.svg") no-repeat center center;
     background-size: contain; }
 
-.btn-mobile-active {
+.btn-mobile-active,
+.btn-tablet-active {
   display: none; }
 
 .btn-mobile-inactive {
@@ -2287,6 +2290,10 @@ input::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; }
+
+@media screen and (max-width: 1500px) {
+  .btn-mobile-inactive {
+    padding-right: 58px; } }
 
 @media screen and (max-width: 1158px) {
   .modal {
@@ -2325,11 +2332,11 @@ input[type="number"] {
   .modal__content-header {
     display: none; }
   .modal__content-title {
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   .modal__content-text {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   .modal__content-main {
-    padding: 32px 10px 15px; }
+    padding: 15px 10px; }
   .modal__social-btn {
     padding: 17px 42px 17px 54px; }
     .modal__social-btn:last-child {
@@ -2345,10 +2352,11 @@ input[type="number"] {
     line-height: 16px;
     padding-bottom: 20px; }
   .modal__label-check--feeding {
-    padding: 18px 40px; }
+    padding: 12px 40px;
+    margin-bottom: 10px; }
   .modal__input {
     height: 40px;
-    margin-bottom: 24px; }
+    margin-bottom: 10px; }
     .modal__input--feeding {
       padding: 0 2px; }
   .modal__label-payments {
@@ -2356,7 +2364,8 @@ input[type="number"] {
   .modal__content-payment .modal__input {
     margin-bottom: 0; }
   .modal__content-payment-img {
-    margin-top: 24px; }
+    margin-top: 10px;
+    margin-bottom: 5px; }
   .modal__label--feeding:first-child {
     width: 50%; }
   .modal__label--feeding:nth-child(2) {
@@ -2366,7 +2375,7 @@ input[type="number"] {
   .modal__label-price {
     margin-right: 12px;
     width: 64px;
-    padding: 17px 10px;
+    padding: 12px 10px;
     display: inline-block; }
     .modal__label-price:last-child {
       margin-right: 0; }
@@ -2378,7 +2387,7 @@ input[type="number"] {
   .modal__input-privacy {
     margin-right: 13px; }
   .modal__btn-send {
-    margin-top: 30px; }
+    margin-top: 10px; }
   .modal__copyright {
     text-align: center; }
     .modal__copyright::before {

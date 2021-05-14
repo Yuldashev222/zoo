@@ -86,16 +86,16 @@
 	}
 }
 
-
-
-
-
 @media screen and (max-width: $mobile-zoos) {
 	.header--zoos {
 		padding: 7px 0 5px;
 
 		.container {
 			max-width: 320px;
+		}
+
+		.header__right {
+			display: block;
 		}
 	}
 }

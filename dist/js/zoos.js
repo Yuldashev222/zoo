@@ -44,10 +44,6 @@ function closeVideo(evt) {
 		playBtn.classList.remove('play-btn--active');
 	}
 }
-// playBtn.addEventListener("click", () => {
-// 	playBtn.classList.toggle('play-btn--active');
-// 	wrapper.addEventListener("click", closeVideo);
-// });
 
 contact.addEventListener("click", function () {
 	contact.classList.toggle('nav__btn-contact--active');
@@ -65,35 +61,11 @@ subBtn.addEventListener("click", function () {
 	sub_borderBottom.classList.toggle("nav__link-borderbottom");
 })
 
-feedback.addEventListener("click", function () {
-	modalFeedback.classList.toggle('modal--feedback--active');
-})
-
-feeding.addEventListener("click", function () {
-	modalFeeding.classList.toggle('modal--feeding--active');
-})
-
-feedingAbove.addEventListener("click", function () {
-	modalFeeding.classList.toggle('modal--feeding--active');
-})
-
-feedbackAbove.addEventListener("click", function () {
-	modalFeedback.classList.toggle('modal--feeding--active');
-})
-
-btnLower.addEventListener("click", function () {
-	modalFeeding.classList.toggle('modal--feeding--active');
-})
-
 signUp.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
 profile.addEventListener("click", function () {
-	modalSignUp.classList.toggle('modal--sign-up--active');
-})
-
-mobileAccount.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
 })
 
@@ -119,30 +91,10 @@ modalSignUp.addEventListener("click", function (evt) {
 	}
 })
 
-	modallogin.addEventListener("click", function (evt) {
-		if(evt.target.classList.contains('modal--log-in')){
-			modallogin.classList.remove('modal--log-in--active');
-			login.classList.toggle('profile__log-in--active');
-			borderBottom.classList.toggle("nav__link-borderbottom");
-		}
-	})
-
-modalFeedback.addEventListener("click", function (evt) {
-	if(evt.target.classList.contains('modal--feedback')){
-		modalFeedback.classList.remove('modal--feeding--active');
-	}
-})
-
-modalFeeding.addEventListener("click", function (evt) {
-	if(evt.target.classList.contains('modal--feeding')){
-		modalFeeding.classList.remove('modal--feeding--active');
-	}
-})
-
 var sidebar = document.querySelector(".sidebar-mobile");
 var dropdown = document.querySelector(".sidebar__animal-dropdown-list");
 
-// sidebar.addEventListener("click", function () {
-// 	dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
-// 	sidebar.classList.toggle('sidebar-mobile--active');
-// })
+sidebar.addEventListener("click", function () {
+	dropdown.classList.toggle('sidebar__animal-dropdown-list--active');
+	sidebar.classList.toggle('sidebar-mobile--active');
+})

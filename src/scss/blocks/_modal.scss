@@ -8,6 +8,10 @@
 
 	display: none;
 	justify-content: center;
+
+	&-zoos {
+		z-index: 1;
+	}
 }
 
 .modal--contact--active,
@@ -400,7 +404,8 @@
 	}
 }
 
-.btn-mobile-active {
+.btn-mobile-active,
+.btn-tablet-active {
 	display: none;
 }
 
@@ -414,6 +419,12 @@ input::-webkit-outer-spin-button {
 }
 input[type="number"] {
 	-moz-appearance: textfield;
+}
+
+@media screen and (max-width: $smallDesktop) {
+	.btn-mobile-inactive {
+		padding-right: 58px;
+	}
 }
 
 @media screen and (max-width: $tablet) {
@@ -480,15 +491,15 @@ input[type="number"] {
 	}
 
 	.modal__content-title {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 
 	.modal__content-text {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	.modal__content-main {
-		padding: 32px 10px 15px;
+		padding: 15px 10px;
 	}
 
 	.modal__social-btn {
@@ -515,13 +526,14 @@ input[type="number"] {
 	}
 
 	.modal__label-check--feeding {
-		padding: 18px 40px;
+		padding: 12px 40px;
+		margin-bottom: 10px;
 	}
 
 	.modal__input {
 		height: 40px;
 
-		margin-bottom: 24px;
+		margin-bottom: 10px;
 
 		&--feeding {
 			padding: 0 2px;
@@ -539,7 +551,8 @@ input[type="number"] {
 	}
 
 	.modal__content-payment-img {
-		margin-top: 24px;
+		margin-top: 10px;
+		margin-bottom: 5px;
 	}
 
 	.modal__label--feeding {
@@ -559,7 +572,7 @@ input[type="number"] {
 	.modal__label-price {
 		margin-right: 12px;
 		width: 64px;
-		padding: 17px 10px;
+		padding: 12px 10px;
 		display: inline-block;
 
 		&:last-child {
@@ -581,7 +594,7 @@ input[type="number"] {
 	}
 
 	.modal__btn-send {
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 
 	.modal__copyright {

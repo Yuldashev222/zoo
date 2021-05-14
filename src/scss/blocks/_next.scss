@@ -17,7 +17,7 @@
 	&--pets {
 		position: absolute;
 
-		right: -50px;
+		right: 0;
 		top: 49%;
 		transform: translateY(150%) rotate(180deg);
 	}
@@ -34,7 +34,7 @@
 	&--pets {
 		position: absolute;
 
-		right: -50px;
+		right: 0;
 		top: 48%;
 	}
 
@@ -95,7 +95,7 @@
 	.next__left {
 		&--pets {
 			right: 30px;
-			top: 49%;
+			top: 56%;
 			transform: translateY(-50%) rotate(180deg);
 		}
 
@@ -108,7 +108,7 @@
 	.next__right {
 		&--pets {
 			right: 30px;
-			top: 46%;
+			top: 49%;
 			transform: translateY(-50%);
 		}
 
