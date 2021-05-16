@@ -33,6 +33,8 @@ var body = document.querySelector(".body");
 
 var mobileAccount = document.querySelector(".nav__btn-account");
 
+var modal = document.querySelector(".modal");
+
 hamburger.addEventListener("click", function () {
 	hamburger.classList.toggle("hamburger-button--active");
 	nav.classList.toggle("nav--active");
@@ -79,7 +81,7 @@ feedingAbove.addEventListener("click", function () {
 })
 
 feedbackAbove.addEventListener("click", function () {
-	modalFeedback.classList.toggle('modal--feeding--active');
+	modalFeedback.classList.toggle('modal--feedback--active');
 })
 
 btnLower.addEventListener("click", function () {
@@ -130,7 +132,7 @@ modalSignUp.addEventListener("click", function (evt) {
 
 modalFeedback.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--feedback')){
-		modalFeedback.classList.remove('modal--feeding--active');
+		modalFeedback.classList.remove('modal--feedback--active');
 	}
 })
 
