@@ -58,6 +58,8 @@ contact.addEventListener("click", function () {
 	borderBottom.classList.toggle("nav__link-borderbottom");
 	sub_borderBottom.classList.toggle("nav__link-borderbottom");
 	nav.classList.toggle("nav--active");
+	hamburger.classList.remove("hamburger-button--active");
+
 })
 
 subBtn.addEventListener("click", function () {
@@ -98,6 +100,9 @@ profile.addEventListener("click", function () {
 
 mobileAccount.addEventListener("click", function () {
 	modalSignUp.classList.toggle('modal--sign-up--active');
+	nav.classList.toggle("nav--active");
+	hamburger.classList.remove("hamburger-button--active");
+
 })
 
 login.addEventListener("click", function () {
@@ -113,12 +118,16 @@ modalContact.addEventListener("click", function (evt) {
 		modalContact.classList.remove('modal--contact--active');
 		borderBottom.classList.remove("nav__link-borderbottom");
 		sub_borderBottom.classList.toggle("nav__link-borderbottom");
+		body.classList.toggle("body--active");
+
 	}
 })
 
 modalSignUp.addEventListener("click", function (evt) {
 	if(evt.target.classList.contains('modal--sign-up')){
 		modalSignUp.classList.remove('modal--sign-up--active');
+		body.classList.toggle("body--active");
+
 	}
 })
 

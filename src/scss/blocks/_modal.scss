@@ -10,7 +10,6 @@
 	justify-content: center;
 
 	&-zoos {
-
 		z-index: 1;
 	}
 }
@@ -481,6 +480,10 @@ input[type="number"] {
 
 	.modal {
 		top: 50px;
+
+		&-zoos .modal__content {
+			margin-top: 70px;
+		}
 	}
 
 	.modal__content {

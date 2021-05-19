@@ -2329,6 +2329,8 @@ input[type="number"] {
     display: none; }
   .modal {
     top: 50px; }
+    .modal-zoos .modal__content {
+      margin-top: 70px; }
   .modal__content {
     width: 320px;
     margin-top: 5px; }
